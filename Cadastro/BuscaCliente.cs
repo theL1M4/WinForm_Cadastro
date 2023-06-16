@@ -20,7 +20,7 @@ namespace Cadastro
         private void button3_Click(object sender, EventArgs e)
         {
             CadastroCliente varCadastroCliente = new CadastroCliente();
-            varCadastroCliente.Show(); // Ou form2.ShowDialog();
+            varCadastroCliente.Show(); // Ou form2.ShowDialog()
         }
     }
 }
