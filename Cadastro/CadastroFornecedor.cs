@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace Cadastro
 {
-    public partial class BuscaFornecedor : Form
+    public partial class CadastroFornecedor : Form
     {
-        public BuscaFornecedor()
+        public CadastroFornecedor()
         {
-            InitializeComponent(); 
+            InitializeComponent();
         }
     }
 }

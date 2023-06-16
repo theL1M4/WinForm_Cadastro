@@ -80,6 +80,18 @@
     <Compile Include="CadastroCliente.Designer.cs">
       <DependentUpon>CadastroCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="CadastroFornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastroFornecedor.Designer.cs">
+      <DependentUpon>CadastroFornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastroProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastroProduto.Designer.cs">
+      <DependentUpon>CadastroProduto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +108,12 @@
     </Compile>
     <EmbeddedResource Include="BuscaCliente.resx">
       <DependentUpon>BuscaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscaFornecedor.resx">
+      <DependentUpon>BuscaFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastroCliente.resx">
+      <DependentUpon>CadastroCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

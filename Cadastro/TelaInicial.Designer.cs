@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnBuscaCliente = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.btnBuscaCliente = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
@@ -48,15 +48,15 @@
             this.panel1.Size = new System.Drawing.Size(459, 290);
             this.panel1.TabIndex = 0;
             // 
-            // btnBuscaCliente
+            // button3
             // 
-            this.btnBuscaCliente.Location = new System.Drawing.Point(4, 22);
-            this.btnBuscaCliente.Name = "btnBuscaCliente";
-            this.btnBuscaCliente.Size = new System.Drawing.Size(95, 23);
-            this.btnBuscaCliente.TabIndex = 0;
-            this.btnBuscaCliente.Text = "Buscar Cliente";
-            this.btnBuscaCliente.UseVisualStyleBackColor = true;
-            this.btnBuscaCliente.Click += new System.EventHandler(this.btnChamarBuscaCliente);
+            this.button3.Location = new System.Drawing.Point(266, 22);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(101, 23);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "Buscar Produto";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.btnChamarBuscaProduto);
             // 
             // button2
             // 
@@ -68,15 +68,15 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.btnChamarBuscaFornecedor);
             // 
-            // button3
+            // btnBuscaCliente
             // 
-            this.button3.Location = new System.Drawing.Point(266, 22);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(101, 23);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Buscar Produto";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.btnChamarBuscaProduto);
+            this.btnBuscaCliente.Location = new System.Drawing.Point(4, 22);
+            this.btnBuscaCliente.Name = "btnBuscaCliente";
+            this.btnBuscaCliente.Size = new System.Drawing.Size(95, 23);
+            this.btnBuscaCliente.TabIndex = 0;
+            this.btnBuscaCliente.Text = "Buscar Cliente";
+            this.btnBuscaCliente.UseVisualStyleBackColor = true;
+            this.btnBuscaCliente.Click += new System.EventHandler(this.btnChamarBuscaCliente);
             // 
             // label1
             // 
