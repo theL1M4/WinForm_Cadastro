@@ -108,14 +108,14 @@
             this.panel2.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel2.Location = new System.Drawing.Point(12, 107);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(267, 92);
+            this.panel2.Size = new System.Drawing.Size(496, 92);
             this.panel2.TabIndex = 5;
             // 
             // button2
             // 
             this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Location = new System.Drawing.Point(215, 51);
+            this.button2.Location = new System.Drawing.Point(442, 50);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(40, 26);
             this.button2.TabIndex = 5;
@@ -125,43 +125,44 @@
             // 
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Location = new System.Drawing.Point(215, 19);
+            this.button1.Location = new System.Drawing.Point(442, 18);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(40, 26);
             this.button1.TabIndex = 4;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(69, 51);
+            this.textBox2.Location = new System.Drawing.Point(128, 51);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(139, 26);
+            this.textBox2.Size = new System.Drawing.Size(308, 26);
             this.textBox2.TabIndex = 3;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(69, 19);
+            this.textBox1.Location = new System.Drawing.Point(128, 19);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(139, 26);
+            this.textBox1.Size = new System.Drawing.Size(308, 26);
             this.textBox1.TabIndex = 2;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(8, 59);
+            this.label3.Location = new System.Drawing.Point(77, 58);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(40, 18);
+            this.label3.Size = new System.Drawing.Size(51, 18);
             this.label3.TabIndex = 1;
-            this.label3.Text = "CPF:";
+            this.label3.Text = "CNPJ:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(8, 27);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 18);
+            this.label2.Size = new System.Drawing.Size(120, 18);
             this.label2.TabIndex = 0;
-            this.label2.Text = "NOME:";
+            this.label2.Text = "RAZÃO SOCIAL:";
             // 
             // panel1
             // 
