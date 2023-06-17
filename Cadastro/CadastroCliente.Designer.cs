@@ -49,8 +49,9 @@
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.metroDateTime1 = new MetroFramework.Controls.MetroDateTime();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -106,7 +107,8 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.textBox7);
+            this.panel2.Controls.Add(this.comboBox1);
+            this.panel2.Controls.Add(this.metroDateTime1);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.textBox6);
@@ -173,9 +175,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(3, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(243, 27);
+            this.label1.Size = new System.Drawing.Size(229, 27);
             this.label1.TabIndex = 0;
-            this.label1.Text = "CADASTRO CLIENTES";
+            this.label1.Text = "CADASTRO CLIENTE";
             // 
             // textBox3
             // 
@@ -250,21 +252,36 @@
             this.label8.TabIndex = 12;
             this.label8.Text = "SEXO:";
             // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(56, 240);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(180, 26);
-            this.textBox7.TabIndex = 14;
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(8, 248);
+            this.label9.Location = new System.Drawing.Point(8, 255);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(42, 18);
+            this.label9.Size = new System.Drawing.Size(109, 18);
             this.label9.TabIndex = 13;
-            this.label9.Text = "DDD:";
+            this.label9.Text = "NASCIMENTO:";
+            // 
+            // metroDateTime1
+            // 
+            this.metroDateTime1.Location = new System.Drawing.Point(123, 248);
+            this.metroDateTime1.MaxDate = new System.DateTime(2023, 6, 16, 21, 3, 14, 0);
+            this.metroDateTime1.MinDate = new System.DateTime(1950, 1, 1, 0, 0, 0, 0);
+            this.metroDateTime1.MinimumSize = new System.Drawing.Size(0, 29);
+            this.metroDateTime1.Name = "metroDateTime1";
+            this.metroDateTime1.Size = new System.Drawing.Size(229, 29);
+            this.metroDateTime1.TabIndex = 14;
+            this.metroDateTime1.Value = new System.DateTime(2023, 6, 16, 0, 0, 0, 0);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "MASCULINO",
+            "FEMININO"});
+            this.comboBox1.Location = new System.Drawing.Point(65, 216);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 26);
+            this.comboBox1.TabIndex = 7;
             // 
             // CadastroCliente
             // 
@@ -308,7 +325,8 @@
         private System.Windows.Forms.TextBox textBox6;
         public System.Windows.Forms.Label label7;
         public System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label9;
+        private MetroFramework.Controls.MetroDateTime metroDateTime1;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
