@@ -16,5 +16,11 @@ namespace Cadastro
         {
             InitializeComponent(); 
         }
+
+        private void clickCadastroFornecedor(object sender, EventArgs e)
+        {
+            CadastroFornecedor varCadastroFornecedor = new CadastroFornecedor();
+            varCadastroFornecedor.Show(); // Ou form2.ShowDialog()
+        }
     }
 }
