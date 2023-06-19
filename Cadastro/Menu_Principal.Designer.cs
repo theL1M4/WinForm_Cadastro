@@ -55,8 +55,9 @@
             this.cadastroDeFornecedoresToolStripMenuItem,
             this.cadastroDeProdutosToolStripMenuItem});
             this.sistemasToolStripMenuItem.Name = "sistemasToolStripMenuItem";
-            this.sistemasToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
-            this.sistemasToolStripMenuItem.Text = "Sistemas";
+            this.sistemasToolStripMenuItem.Size = new System.Drawing.Size(30, 20);
+            this.sistemasToolStripMenuItem.Text = "☰";
+            this.sistemasToolStripMenuItem.Click += new System.EventHandler(this.sistemasToolStripMenuItem_Click);
             // 
             // cadastroDeClientesToolStripMenuItem
             // 

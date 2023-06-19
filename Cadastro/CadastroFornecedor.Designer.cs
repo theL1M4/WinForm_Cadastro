@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -44,8 +45,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.textBox8 = new System.Windows.Forms.TextBox();
@@ -56,12 +62,8 @@
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -88,6 +90,22 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(697, 190);
             this.panel2.TabIndex = 8;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Alimentos",
+            "Bebidas",
+            "Perecíveis",
+            "Eletrônicos",
+            "Higiene",
+            "Limpeza",
+            "Uso Interno"});
+            this.comboBox1.Location = new System.Drawing.Point(166, 156);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 26);
+            this.comboBox1.TabIndex = 13;
             // 
             // label8
             // 
@@ -214,24 +232,10 @@
             this.label1.Text = "CADASTRO FORNECEDOR";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Alimentos",
-            "Bebidas",
-            "Perecíveis",
-            "Eletrônicos",
-            "Higiene",
-            "Limpeza",
-            "Uso Interno"});
-            this.comboBox1.Location = new System.Drawing.Point(166, 156);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 26);
-            this.comboBox1.TabIndex = 13;
-            // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.button2);
+            this.panel3.Controls.Add(this.button1);
             this.panel3.Controls.Add(this.textBox15);
             this.panel3.Controls.Add(this.label17);
             this.panel3.Controls.Add(this.textBox14);
@@ -254,6 +258,55 @@
             this.panel3.Size = new System.Drawing.Size(696, 173);
             this.panel3.TabIndex = 9;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            // 
+            // textBox15
+            // 
+            this.textBox15.Location = new System.Drawing.Point(120, 141);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(164, 26);
+            this.textBox15.TabIndex = 29;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(10, 149);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(104, 18);
+            this.label17.TabIndex = 28;
+            this.label17.Text = "REFERÊNCIA:";
+            // 
+            // textBox14
+            // 
+            this.textBox14.Location = new System.Drawing.Point(303, 44);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(127, 26);
+            this.textBox14.TabIndex = 27;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(181, 50);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(124, 18);
+            this.label16.TabIndex = 26;
+            this.label16.Text = "COMPLEMENTO:";
+            this.label16.Click += new System.EventHandler(this.label16_Click);
+            // 
+            // textBox13
+            // 
+            this.textBox13.Location = new System.Drawing.Point(335, 10);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(358, 26);
+            this.textBox13.TabIndex = 25;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(246, 18);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(91, 18);
+            this.label15.TabIndex = 24;
+            this.label15.Text = "ENDEREÇO:";
             // 
             // textBox7
             // 
@@ -307,7 +360,7 @@
             // 
             this.textBox11.Location = new System.Drawing.Point(529, 42);
             this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(160, 26);
+            this.textBox11.Size = new System.Drawing.Size(164, 26);
             this.textBox11.TabIndex = 15;
             // 
             // textBox12
@@ -336,54 +389,25 @@
             this.label14.TabIndex = 12;
             this.label14.Text = "CEP:";
             // 
-            // textBox13
+            // button2
             // 
-            this.textBox13.Location = new System.Drawing.Point(335, 10);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(358, 26);
-            this.textBox13.TabIndex = 25;
+            this.button2.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.button2.Location = new System.Drawing.Point(475, 141);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(104, 23);
+            this.button2.TabIndex = 30;
+            this.button2.Text = "CANCELAR";
+            this.button2.UseVisualStyleBackColor = true;
             // 
-            // label15
+            // button1
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(246, 18);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(91, 18);
-            this.label15.TabIndex = 24;
-            this.label15.Text = "ENDEREÇO:";
-            // 
-            // textBox14
-            // 
-            this.textBox14.Location = new System.Drawing.Point(303, 44);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(127, 26);
-            this.textBox14.TabIndex = 27;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(181, 50);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(124, 18);
-            this.label16.TabIndex = 26;
-            this.label16.Text = "COMPLEMENTO:";
-            this.label16.Click += new System.EventHandler(this.label16_Click);
-            // 
-            // textBox15
-            // 
-            this.textBox15.Location = new System.Drawing.Point(120, 141);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(164, 26);
-            this.textBox15.TabIndex = 29;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(10, 149);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(104, 18);
-            this.label17.TabIndex = 28;
-            this.label17.Text = "REFERÊNCIA:";
+            this.button1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.button1.Location = new System.Drawing.Point(585, 141);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(104, 23);
+            this.button1.TabIndex = 31;
+            this.button1.Text = "CADASTRAR";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // CadastroFornecedor
             // 
@@ -441,5 +465,7 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox textBox15;
         private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }
