@@ -34,7 +34,6 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.metroDateTime1 = new MetroFramework.Controls.MetroDateTime();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
@@ -64,6 +63,7 @@
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -71,12 +71,12 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.dateTimePicker1);
             this.panel2.Controls.Add(this.textBox5);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.textBox4);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.comboBox1);
-            this.panel2.Controls.Add(this.metroDateTime1);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.textBox6);
@@ -135,17 +135,6 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 26);
             this.comboBox1.TabIndex = 7;
-            // 
-            // metroDateTime1
-            // 
-            this.metroDateTime1.Location = new System.Drawing.Point(302, 51);
-            this.metroDateTime1.MaxDate = new System.DateTime(2023, 6, 16, 21, 3, 14, 0);
-            this.metroDateTime1.MinDate = new System.DateTime(1950, 1, 1, 0, 0, 0, 0);
-            this.metroDateTime1.MinimumSize = new System.Drawing.Size(0, 29);
-            this.metroDateTime1.Name = "metroDateTime1";
-            this.metroDateTime1.Size = new System.Drawing.Size(227, 29);
-            this.metroDateTime1.TabIndex = 14;
-            this.metroDateTime1.Value = new System.DateTime(2023, 6, 16, 0, 0, 0, 0);
             // 
             // label9
             // 
@@ -399,6 +388,15 @@
             this.label14.TabIndex = 12;
             this.label14.Text = "CEP:";
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(302, 53);
+            this.dateTimePicker1.MaxDate = new System.DateTime(2023, 12, 31, 0, 0, 0, 0);
+            this.dateTimePicker1.MinDate = new System.DateTime(1950, 1, 1, 0, 0, 0, 0);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(227, 26);
+            this.dateTimePicker1.TabIndex = 19;
+            // 
             // CadastroCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -433,7 +431,6 @@
         public System.Windows.Forms.Label label7;
         public System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private MetroFramework.Controls.MetroDateTime metroDateTime1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label6;
@@ -456,5 +453,6 @@
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
