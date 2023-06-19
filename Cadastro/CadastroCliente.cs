@@ -16,5 +16,10 @@ namespace Cadastro
         {
             InitializeComponent();
         }
+
+        private void CancelarCadastroCliente(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
