@@ -22,5 +22,10 @@ namespace Cadastro
             CadastroCliente varCadastroCliente = new CadastroCliente();
             varCadastroCliente.Show(); // Ou varCadastroCliente.ShowDialog()
         }
+
+        private void clickHome(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

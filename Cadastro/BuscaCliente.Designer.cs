@@ -32,6 +32,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button7 = new System.Windows.Forms.Button();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -43,12 +46,12 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.btnCancelarBuscaProd = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -85,6 +88,32 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(496, 118);
             this.panel2.TabIndex = 2;
+            // 
+            // button7
+            // 
+            this.button7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button7.BackgroundImage")));
+            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button7.Location = new System.Drawing.Point(432, 86);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(40, 26);
+            this.button7.TabIndex = 8;
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(118, 86);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(307, 26);
+            this.textBox3.TabIndex = 7;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(8, 94);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(113, 18);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "CÓD. CLIENTE:";
             // 
             // button2
             // 
@@ -187,37 +216,32 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button7
+            // panel4
             // 
-            this.button7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button7.BackgroundImage")));
-            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button7.Location = new System.Drawing.Point(432, 86);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(40, 26);
-            this.button7.TabIndex = 8;
-            this.button7.UseVisualStyleBackColor = true;
+            this.panel4.Controls.Add(this.btnCancelarBuscaProd);
+            this.panel4.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel4.Location = new System.Drawing.Point(248, 12);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(120, 43);
+            this.panel4.TabIndex = 14;
             // 
-            // textBox3
+            // btnCancelarBuscaProd
             // 
-            this.textBox3.Location = new System.Drawing.Point(118, 86);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(307, 26);
-            this.textBox3.TabIndex = 7;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(8, 94);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(113, 18);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "CÓD. CLIENTE:";
+            this.btnCancelarBuscaProd.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnCancelarBuscaProd.Location = new System.Drawing.Point(24, 10);
+            this.btnCancelarBuscaProd.Name = "btnCancelarBuscaProd";
+            this.btnCancelarBuscaProd.Size = new System.Drawing.Size(71, 23);
+            this.btnCancelarBuscaProd.TabIndex = 29;
+            this.btnCancelarBuscaProd.Text = "HOME";
+            this.btnCancelarBuscaProd.UseVisualStyleBackColor = true;
+            this.btnCancelarBuscaProd.Click += new System.EventHandler(this.clickHome);
             // 
             // BuscaCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -229,6 +253,7 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -252,5 +277,7 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button btnCancelarBuscaProd;
     }
 }
