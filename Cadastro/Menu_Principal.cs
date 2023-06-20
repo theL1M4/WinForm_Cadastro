@@ -17,20 +17,27 @@ namespace Cadastro
             InitializeComponent();
         }
 
-        private void cadastroDeClientesToolStripMenuItem_Click(object sender, EventArgs e)
+        private void CadastroCliente(object sender, EventArgs e)
         {
-            CadastroCliente CC = new CadastroCliente();
-            CC.ShowDialog();
+            BuscaCliente varBuscaCliente = new BuscaCliente();
+            varBuscaCliente.ShowDialog();
         }
 
-        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        private void FecharPrograma(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void sistemasToolStripMenuItem_Click(object sender, EventArgs e)
+        private void CadastroFornecedor(object sender, EventArgs e)
         {
+            BuscaFornecedor varBuscaFornecedor = new BuscaFornecedor();
+            varBuscaFornecedor.ShowDialog();
+        }
 
+        private void CadastroProduto(object sender, EventArgs e)
+        {
+            BuscaProduto varBuscaProduto = new BuscaProduto();
+            varBuscaProduto.ShowDialog();
         }
     }
 }
