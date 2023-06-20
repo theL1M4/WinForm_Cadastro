@@ -31,6 +31,19 @@
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnCancelarCadProd = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
@@ -41,21 +54,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panelCadProd = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.btnCancelarCadProd = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label25 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panelCadProd.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBox12
@@ -105,6 +108,124 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(749, 270);
             this.panel2.TabIndex = 12;
+            // 
+            // btnCancelarCadProd
+            // 
+            this.btnCancelarCadProd.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnCancelarCadProd.Location = new System.Drawing.Point(513, 233);
+            this.btnCancelarCadProd.Name = "btnCancelarCadProd";
+            this.btnCancelarCadProd.Size = new System.Drawing.Size(104, 23);
+            this.btnCancelarCadProd.TabIndex = 29;
+            this.btnCancelarCadProd.Text = "CANCELAR";
+            this.btnCancelarCadProd.UseVisualStyleBackColor = true;
+            this.btnCancelarCadProd.Click += new System.EventHandler(this.clickCancelProd);
+            // 
+            // button1
+            // 
+            this.button1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.button1.Location = new System.Drawing.Point(623, 233);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(104, 23);
+            this.button1.TabIndex = 30;
+            this.button1.Text = "CADASTRAR";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(410, 154);
+            this.textBox9.MaxLength = 8;
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(56, 26);
+            this.textBox9.TabIndex = 27;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(250, 162);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(154, 18);
+            this.label10.TabIndex = 28;
+            this.label10.Text = "MARGEM DE LUCRO:";
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(611, 154);
+            this.textBox8.MaxLength = 8;
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(116, 26);
+            this.textBox8.TabIndex = 25;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(472, 162);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(137, 18);
+            this.label9.TabIndex = 26;
+            this.label9.Text = "PREÇO DE VENDA:";
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(149, 154);
+            this.textBox7.MaxLength = 8;
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(95, 26);
+            this.textBox7.TabIndex = 23;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(5, 162);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(138, 18);
+            this.label8.TabIndex = 24;
+            this.label8.Text = "PREÇO DE CUSTO:";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "Quilograma",
+            "Litro",
+            "Metro",
+            "Unidade"});
+            this.comboBox2.Location = new System.Drawing.Point(175, 93);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(97, 26);
+            this.comboBox2.TabIndex = 22;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(484, 64);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(243, 26);
+            this.textBox4.TabIndex = 20;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(374, 72);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(104, 18);
+            this.label5.TabIndex = 21;
+            this.label5.Text = "FABRICANTE:";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(151, 3);
+            this.textBox3.MaxLength = 11;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(150, 26);
+            this.textBox3.TabIndex = 19;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(5, 11);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(140, 18);
+            this.label4.TabIndex = 18;
+            this.label4.Text = "CÓDIGO INTERNO:";
             // 
             // textBox5
             // 
@@ -193,137 +314,41 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "CADASTRO PRODUTO";
             // 
-            // textBox3
+            // panel4
             // 
-            this.textBox3.Location = new System.Drawing.Point(151, 3);
-            this.textBox3.MaxLength = 11;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(150, 26);
-            this.textBox3.TabIndex = 19;
+            this.panel4.Controls.Add(this.label25);
+            this.panel4.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel4.Location = new System.Drawing.Point(572, -4);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(194, 69);
+            this.panel4.TabIndex = 13;
             // 
-            // label4
+            // label25
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(5, 11);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(140, 18);
-            this.label4.TabIndex = 18;
-            this.label4.Text = "CÓDIGO INTERNO:";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(484, 64);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(243, 26);
-            this.textBox4.TabIndex = 20;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(374, 72);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(104, 18);
-            this.label5.TabIndex = 21;
-            this.label5.Text = "FABRICANTE:";
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "Quilograma",
-            "Litro",
-            "Metro",
-            "Unidade"});
-            this.comboBox2.Location = new System.Drawing.Point(175, 93);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(97, 26);
-            this.comboBox2.TabIndex = 22;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(149, 154);
-            this.textBox7.MaxLength = 8;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(95, 26);
-            this.textBox7.TabIndex = 23;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(5, 162);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(138, 18);
-            this.label8.TabIndex = 24;
-            this.label8.Text = "PREÇO DE CUSTO:";
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(611, 154);
-            this.textBox8.MaxLength = 8;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(116, 26);
-            this.textBox8.TabIndex = 25;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(472, 162);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(137, 18);
-            this.label9.TabIndex = 26;
-            this.label9.Text = "PREÇO DE VENDA:";
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(410, 154);
-            this.textBox9.MaxLength = 8;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(56, 26);
-            this.textBox9.TabIndex = 27;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(250, 162);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(154, 18);
-            this.label10.TabIndex = 28;
-            this.label10.Text = "MARGEM DE LUCRO:";
-            // 
-            // btnCancelarCadProd
-            // 
-            this.btnCancelarCadProd.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnCancelarCadProd.Location = new System.Drawing.Point(513, 233);
-            this.btnCancelarCadProd.Name = "btnCancelarCadProd";
-            this.btnCancelarCadProd.Size = new System.Drawing.Size(104, 23);
-            this.btnCancelarCadProd.TabIndex = 29;
-            this.btnCancelarCadProd.Text = "CANCELAR";
-            this.btnCancelarCadProd.UseVisualStyleBackColor = true;
-            this.btnCancelarCadProd.Click += new System.EventHandler(this.clickCancelProd);
-            // 
-            // button1
-            // 
-            this.button1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button1.Location = new System.Drawing.Point(623, 233);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(104, 23);
-            this.button1.TabIndex = 30;
-            this.button1.Text = "CADASTRAR";
-            this.button1.UseVisualStyleBackColor = true;
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(5, 27);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(113, 18);
+            this.label25.TabIndex = 0;
+            this.label25.Text = "CÓD. CLIENTE:";
             // 
             // CadastroProduto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panelCadProd);
             this.Name = "CadastroProduto";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CadastroProduto";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panelCadProd.ResumeLayout(false);
             this.panelCadProd.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -355,5 +380,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnCancelarCadProd;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label label25;
     }
 }
