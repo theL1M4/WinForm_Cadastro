@@ -23,16 +23,6 @@ namespace Cadastro
             varCadastroFornecedor.Show(); // Ou form2.ShowDialog()
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void click(object sender, EventArgs e)
-        {
-
-        }
-
         private void clickHome(object sender, EventArgs e)
         {
             this.Close();

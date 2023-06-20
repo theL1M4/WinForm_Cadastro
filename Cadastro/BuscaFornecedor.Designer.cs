@@ -35,6 +35,9 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button7 = new System.Windows.Forms.Button();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -43,9 +46,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.button7 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnCancelarBuscaForn = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
@@ -120,6 +120,32 @@
             this.panel2.Size = new System.Drawing.Size(535, 120);
             this.panel2.TabIndex = 5;
             // 
+            // button7
+            // 
+            this.button7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button7.BackgroundImage")));
+            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button7.Location = new System.Drawing.Point(470, 81);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(40, 26);
+            this.button7.TabIndex = 8;
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(156, 82);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(308, 26);
+            this.textBox3.TabIndex = 7;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(8, 89);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(151, 18);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "CÓD. FORNECEDOR:";
+            // 
             // button2
             // 
             this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
@@ -139,7 +165,6 @@
             this.button1.Size = new System.Drawing.Size(40, 26);
             this.button1.TabIndex = 4;
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox2
             // 
@@ -191,32 +216,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "FORNECEDORES";
             // 
-            // button7
-            // 
-            this.button7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button7.BackgroundImage")));
-            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button7.Location = new System.Drawing.Point(470, 81);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(40, 26);
-            this.button7.TabIndex = 8;
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(156, 82);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(308, 26);
-            this.textBox3.TabIndex = 7;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(8, 89);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(151, 18);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "CÓD. FORNECEDOR:";
-            // 
             // panel4
             // 
             this.panel4.Controls.Add(this.btnCancelarBuscaForn);
@@ -235,7 +234,7 @@
             this.btnCancelarBuscaForn.TabIndex = 29;
             this.btnCancelarBuscaForn.Text = "HOME";
             this.btnCancelarBuscaForn.UseVisualStyleBackColor = true;
-            this.btnCancelarBuscaForn.Click += new System.EventHandler(this.click);
+            this.btnCancelarBuscaForn.Click += new System.EventHandler(this.clickHome);
             // 
             // BuscaFornecedor
             // 
