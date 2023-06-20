@@ -22,7 +22,7 @@ namespace Cadastro
             CadastroFornecedor varCadastroFornecedor = new CadastroFornecedor();
             varCadastroFornecedor.Show(); // Ou form2.ShowDialog()
         }
-         
+
         private void clickHome(object sender, EventArgs e)
         {
             this.Close();
