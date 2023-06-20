@@ -27,5 +27,15 @@ namespace Cadastro
         {
 
         }
+
+        private void click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void clickHome(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

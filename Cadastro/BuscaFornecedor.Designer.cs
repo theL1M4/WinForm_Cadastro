@@ -46,9 +46,12 @@
             this.button7 = new System.Windows.Forms.Button();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.btnCancelarBuscaForn = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel3
@@ -214,22 +217,45 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "CÓD. FORNECEDOR:";
             // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.btnCancelarBuscaForn);
+            this.panel4.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel4.Location = new System.Drawing.Point(427, 12);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(120, 43);
+            this.panel4.TabIndex = 14;
+            // 
+            // btnCancelarBuscaForn
+            // 
+            this.btnCancelarBuscaForn.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnCancelarBuscaForn.Location = new System.Drawing.Point(24, 10);
+            this.btnCancelarBuscaForn.Name = "btnCancelarBuscaForn";
+            this.btnCancelarBuscaForn.Size = new System.Drawing.Size(71, 23);
+            this.btnCancelarBuscaForn.TabIndex = 29;
+            this.btnCancelarBuscaForn.Text = "HOME";
+            this.btnCancelarBuscaForn.UseVisualStyleBackColor = true;
+            this.btnCancelarBuscaForn.Click += new System.EventHandler(this.click);
+            // 
             // BuscaFornecedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "BuscaFornecedor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BuscaFornecedor";
+            this.Click += new System.EventHandler(this.clickHome);
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -253,5 +279,7 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button btnCancelarBuscaForn;
     }
 }
