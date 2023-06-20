@@ -35,6 +35,15 @@
             this.brnModificarProd = new System.Windows.Forms.Button();
             this.btnAddProd = new System.Windows.Forms.Button();
             this.panelProdutos2 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.lblFabricanteProd = new System.Windows.Forms.Label();
+            this.lblFornecedorProd = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -43,15 +52,6 @@
             this.lblNomeProd = new System.Windows.Forms.Label();
             this.panelProdutos = new System.Windows.Forms.Panel();
             this.lblProdutos = new System.Windows.Forms.Label();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.lblFabricanteProd = new System.Windows.Forms.Label();
-            this.lblFornecedorProd = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.panelProdutos3.SuspendLayout();
             this.panelProdutos2.SuspendLayout();
             this.panelProdutos.SuspendLayout();
@@ -112,17 +112,17 @@
             this.panelProdutos2.Controls.Add(this.button3);
             this.panelProdutos2.Controls.Add(this.textBox5);
             this.panelProdutos2.Controls.Add(this.label1);
+            this.panelProdutos2.Controls.Add(this.lblEanProd);
             this.panelProdutos2.Controls.Add(this.button7);
+            this.panelProdutos2.Controls.Add(this.textBox2);
+            this.panelProdutos2.Controls.Add(this.button2);
             this.panelProdutos2.Controls.Add(this.button8);
             this.panelProdutos2.Controls.Add(this.textBox3);
             this.panelProdutos2.Controls.Add(this.textBox4);
             this.panelProdutos2.Controls.Add(this.lblFabricanteProd);
             this.panelProdutos2.Controls.Add(this.lblFornecedorProd);
-            this.panelProdutos2.Controls.Add(this.button2);
             this.panelProdutos2.Controls.Add(this.button1);
-            this.panelProdutos2.Controls.Add(this.textBox2);
             this.panelProdutos2.Controls.Add(this.textBox1);
-            this.panelProdutos2.Controls.Add(this.lblEanProd);
             this.panelProdutos2.Controls.Add(this.lblNomeProd);
             this.panelProdutos2.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelProdutos2.Location = new System.Drawing.Point(12, 115);
@@ -131,76 +131,31 @@
             this.panelProdutos2.TabIndex = 5;
             this.panelProdutos2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // button2
+            // button3
             // 
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Location = new System.Drawing.Point(304, 81);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(40, 26);
-            this.button2.TabIndex = 5;
-            this.button2.UseVisualStyleBackColor = true;
+            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.Location = new System.Drawing.Point(304, 82);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(40, 26);
+            this.button3.TabIndex = 14;
+            this.button3.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // textBox5
             // 
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Location = new System.Drawing.Point(304, 18);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(40, 26);
-            this.button1.TabIndex = 4;
-            this.button1.UseVisualStyleBackColor = true;
+            this.textBox5.Location = new System.Drawing.Point(128, 83);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(170, 26);
+            this.textBox5.TabIndex = 13;
             // 
-            // textBox2
+            // label1
             // 
-            this.textBox2.Location = new System.Drawing.Point(128, 82);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(170, 26);
-            this.textBox2.TabIndex = 3;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(128, 19);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(170, 26);
-            this.textBox1.TabIndex = 2;
-            // 
-            // lblEanProd
-            // 
-            this.lblEanProd.AutoSize = true;
-            this.lblEanProd.Location = new System.Drawing.Point(8, 90);
-            this.lblEanProd.Name = "lblEanProd";
-            this.lblEanProd.Size = new System.Drawing.Size(81, 18);
-            this.lblEanProd.TabIndex = 1;
-            this.lblEanProd.Text = "CÓD. EAN:";
-            // 
-            // lblNomeProd
-            // 
-            this.lblNomeProd.AutoSize = true;
-            this.lblNomeProd.Location = new System.Drawing.Point(8, 27);
-            this.lblNomeProd.Name = "lblNomeProd";
-            this.lblNomeProd.Size = new System.Drawing.Size(55, 18);
-            this.lblNomeProd.TabIndex = 0;
-            this.lblNomeProd.Text = "NOME:";
-            // 
-            // panelProdutos
-            // 
-            this.panelProdutos.Controls.Add(this.lblProdutos);
-            this.panelProdutos.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panelProdutos.Location = new System.Drawing.Point(12, 20);
-            this.panelProdutos.Name = "panelProdutos";
-            this.panelProdutos.Size = new System.Drawing.Size(200, 50);
-            this.panelProdutos.TabIndex = 4;
-            this.panelProdutos.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // lblProdutos
-            // 
-            this.lblProdutos.AutoSize = true;
-            this.lblProdutos.Location = new System.Drawing.Point(3, 10);
-            this.lblProdutos.Name = "lblProdutos";
-            this.lblProdutos.Size = new System.Drawing.Size(131, 27);
-            this.lblProdutos.TabIndex = 0;
-            this.lblProdutos.Text = "PRODUTOS";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(8, 91);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(122, 18);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "CÓD. PRODUTO:";
             // 
             // button7
             // 
@@ -254,31 +209,76 @@
             this.lblFornecedorProd.TabIndex = 6;
             this.lblFornecedorProd.Text = "FORNECEDOR:";
             // 
-            // button3
+            // button2
             // 
-            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.Location = new System.Drawing.Point(304, 50);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(40, 26);
-            this.button3.TabIndex = 14;
-            this.button3.UseVisualStyleBackColor = true;
+            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.Location = new System.Drawing.Point(304, 50);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(40, 26);
+            this.button2.TabIndex = 5;
+            this.button2.UseVisualStyleBackColor = true;
             // 
-            // textBox5
+            // button1
             // 
-            this.textBox5.Location = new System.Drawing.Point(128, 51);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(170, 26);
-            this.textBox5.TabIndex = 13;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Location = new System.Drawing.Point(304, 18);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(40, 26);
+            this.button1.TabIndex = 4;
+            this.button1.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // textBox2
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(8, 59);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(117, 18);
-            this.label1.TabIndex = 12;
-            this.label1.Text = "CÓD. INTERNO:";
+            this.textBox2.Location = new System.Drawing.Point(128, 51);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(170, 26);
+            this.textBox2.TabIndex = 3;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(128, 19);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(170, 26);
+            this.textBox1.TabIndex = 2;
+            // 
+            // lblEanProd
+            // 
+            this.lblEanProd.AutoSize = true;
+            this.lblEanProd.Location = new System.Drawing.Point(8, 59);
+            this.lblEanProd.Name = "lblEanProd";
+            this.lblEanProd.Size = new System.Drawing.Size(81, 18);
+            this.lblEanProd.TabIndex = 1;
+            this.lblEanProd.Text = "CÓD. EAN:";
+            // 
+            // lblNomeProd
+            // 
+            this.lblNomeProd.AutoSize = true;
+            this.lblNomeProd.Location = new System.Drawing.Point(8, 27);
+            this.lblNomeProd.Name = "lblNomeProd";
+            this.lblNomeProd.Size = new System.Drawing.Size(55, 18);
+            this.lblNomeProd.TabIndex = 0;
+            this.lblNomeProd.Text = "NOME:";
+            // 
+            // panelProdutos
+            // 
+            this.panelProdutos.Controls.Add(this.lblProdutos);
+            this.panelProdutos.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panelProdutos.Location = new System.Drawing.Point(12, 20);
+            this.panelProdutos.Name = "panelProdutos";
+            this.panelProdutos.Size = new System.Drawing.Size(200, 50);
+            this.panelProdutos.TabIndex = 4;
+            this.panelProdutos.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // lblProdutos
+            // 
+            this.lblProdutos.AutoSize = true;
+            this.lblProdutos.Location = new System.Drawing.Point(3, 10);
+            this.lblProdutos.Name = "lblProdutos";
+            this.lblProdutos.Size = new System.Drawing.Size(131, 27);
+            this.lblProdutos.TabIndex = 0;
+            this.lblProdutos.Text = "PRODUTOS";
             // 
             // BuscaProduto
             // 
@@ -289,6 +289,7 @@
             this.Controls.Add(this.panelProdutos2);
             this.Controls.Add(this.panelProdutos);
             this.Name = "BuscaProduto";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BuscaProduto";
             this.panelProdutos3.ResumeLayout(false);
             this.panelProdutos2.ResumeLayout(false);
