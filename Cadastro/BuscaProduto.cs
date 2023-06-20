@@ -37,5 +37,10 @@ namespace Cadastro
             CadastroProduto varCadastroProduto = new CadastroProduto();
             varCadastroProduto.ShowDialog();
         }
+
+        private void clickHome(object sender, EventArgs e)
+        {
+          this.Close();
+        }
     }
 }

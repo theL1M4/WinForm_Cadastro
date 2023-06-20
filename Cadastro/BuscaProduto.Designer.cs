@@ -52,9 +52,12 @@
             this.lblNomeProd = new System.Windows.Forms.Label();
             this.panelProdutos = new System.Windows.Forms.Panel();
             this.lblProdutos = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnCancelarBuscaProd = new System.Windows.Forms.Button();
             this.panelProdutos3.SuspendLayout();
             this.panelProdutos2.SuspendLayout();
             this.panelProdutos.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelProdutos3
@@ -280,11 +283,32 @@
             this.lblProdutos.TabIndex = 0;
             this.lblProdutos.Text = "PRODUTOS";
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.btnCancelarBuscaProd);
+            this.panel2.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel2.Location = new System.Drawing.Point(248, 20);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(120, 43);
+            this.panel2.TabIndex = 13;
+            // 
+            // btnCancelarBuscaProd
+            // 
+            this.btnCancelarBuscaProd.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnCancelarBuscaProd.Location = new System.Drawing.Point(24, 10);
+            this.btnCancelarBuscaProd.Name = "btnCancelarBuscaProd";
+            this.btnCancelarBuscaProd.Size = new System.Drawing.Size(71, 23);
+            this.btnCancelarBuscaProd.TabIndex = 29;
+            this.btnCancelarBuscaProd.Text = "HOME";
+            this.btnCancelarBuscaProd.UseVisualStyleBackColor = true;
+            this.btnCancelarBuscaProd.Click += new System.EventHandler(this.clickHome);
+            // 
             // BuscaProduto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panelProdutos3);
             this.Controls.Add(this.panelProdutos2);
             this.Controls.Add(this.panelProdutos);
@@ -296,6 +320,7 @@
             this.panelProdutos2.PerformLayout();
             this.panelProdutos.ResumeLayout(false);
             this.panelProdutos.PerformLayout();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -325,5 +350,7 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button btnCancelarBuscaProd;
     }
 }
