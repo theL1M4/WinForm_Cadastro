@@ -41,5 +41,12 @@ namespace Cadastro
         {
 
         }
+
+        private void clickCancelarFornecedor(object sender, EventArgs e)
+        {
+            //BuscaFornecedor varBuscaFornecedor = new BuscaFornecedor();
+            //varBuscaFornecedor.Show();
+            this.Close();
+        }
     }
 }
