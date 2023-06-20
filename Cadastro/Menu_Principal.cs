@@ -12,7 +12,7 @@ namespace Cadastro
 {
     public partial class Menu_Principal : Form
     {
-        public Menu_Principal()
+             public Menu_Principal()
         {
             InitializeComponent();
         }
@@ -21,7 +21,7 @@ namespace Cadastro
         {
             BuscaCliente varBuscaCliente = new BuscaCliente();
             varBuscaCliente.ShowDialog();
-        }
+         }
 
         private void FecharPrograma(object sender, EventArgs e)
         {

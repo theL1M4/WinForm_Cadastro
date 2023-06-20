@@ -190,6 +190,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "BuscaCliente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BuscaCliente";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
