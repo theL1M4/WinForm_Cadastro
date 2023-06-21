@@ -28,71 +28,71 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.panelCadastroForn = new System.Windows.Forms.Panel();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lblTipagemCadForn = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lblEmailCadForn = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lblTelCadForn = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblDDDCadForn = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblCNPJCadForn = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.lblIECadForn = new System.Windows.Forms.Label();
+            this.lblRazaoCadForn = new System.Windows.Forms.Label();
+            this.panelcadForn = new System.Windows.Forms.Panel();
+            this.lblCadastroForn = new System.Windows.Forms.Label();
+            this.panelCadEndForn = new System.Windows.Forms.Panel();
+            this.btnCancelarCadForn = new System.Windows.Forms.Button();
+            this.btnCadastrarCadForn = new System.Windows.Forms.Button();
             this.textBox15 = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
+            this.lblRefCadForn = new System.Windows.Forms.Label();
             this.textBox14 = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
+            this.lblCompCadForn = new System.Windows.Forms.Label();
             this.textBox13 = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
+            this.lblEndCadForn = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
+            this.lblEstadoCadForn = new System.Windows.Forms.Label();
             this.textBox8 = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
+            this.lblCidadeCadForn = new System.Windows.Forms.Label();
             this.textBox10 = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
+            this.lblNumCadForn = new System.Windows.Forms.Label();
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.textBox12 = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label25 = new System.Windows.Forms.Label();
-            this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
+            this.lblBairroCadForn = new System.Windows.Forms.Label();
+            this.lblCepCadForn = new System.Windows.Forms.Label();
+            this.panelCodCadForn = new System.Windows.Forms.Panel();
+            this.lblCodIntForn = new System.Windows.Forms.Label();
+            this.panelCadastroForn.SuspendLayout();
+            this.panelcadForn.SuspendLayout();
+            this.panelCadEndForn.SuspendLayout();
+            this.panelCodCadForn.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel2
+            // panelCadastroForn
             // 
-            this.panel2.Controls.Add(this.comboBox1);
-            this.panel2.Controls.Add(this.label8);
-            this.panel2.Controls.Add(this.textBox6);
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.textBox5);
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.textBox4);
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.textBox3);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.textBox2);
-            this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel2.Location = new System.Drawing.Point(12, 53);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(697, 190);
-            this.panel2.TabIndex = 8;
+            this.panelCadastroForn.Controls.Add(this.comboBox1);
+            this.panelCadastroForn.Controls.Add(this.lblTipagemCadForn);
+            this.panelCadastroForn.Controls.Add(this.textBox6);
+            this.panelCadastroForn.Controls.Add(this.lblEmailCadForn);
+            this.panelCadastroForn.Controls.Add(this.textBox5);
+            this.panelCadastroForn.Controls.Add(this.lblTelCadForn);
+            this.panelCadastroForn.Controls.Add(this.textBox4);
+            this.panelCadastroForn.Controls.Add(this.lblDDDCadForn);
+            this.panelCadastroForn.Controls.Add(this.textBox3);
+            this.panelCadastroForn.Controls.Add(this.lblCNPJCadForn);
+            this.panelCadastroForn.Controls.Add(this.textBox2);
+            this.panelCadastroForn.Controls.Add(this.textBox1);
+            this.panelCadastroForn.Controls.Add(this.lblIECadForn);
+            this.panelCadastroForn.Controls.Add(this.lblRazaoCadForn);
+            this.panelCadastroForn.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panelCadastroForn.Location = new System.Drawing.Point(12, 53);
+            this.panelCadastroForn.Name = "panelCadastroForn";
+            this.panelCadastroForn.Size = new System.Drawing.Size(697, 190);
+            this.panelCadastroForn.TabIndex = 8;
             // 
             // comboBox1
             // 
@@ -110,14 +110,14 @@
             this.comboBox1.Size = new System.Drawing.Size(121, 26);
             this.comboBox1.TabIndex = 13;
             // 
-            // label8
+            // lblTipagemCadForn
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(8, 156);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(151, 18);
-            this.label8.TabIndex = 12;
-            this.label8.Text = "TIPAGEM PRODUTO:";
+            this.lblTipagemCadForn.AutoSize = true;
+            this.lblTipagemCadForn.Location = new System.Drawing.Point(8, 156);
+            this.lblTipagemCadForn.Name = "lblTipagemCadForn";
+            this.lblTipagemCadForn.Size = new System.Drawing.Size(151, 18);
+            this.lblTipagemCadForn.TabIndex = 12;
+            this.lblTipagemCadForn.Text = "TIPAGEM PRODUTO:";
             // 
             // textBox6
             // 
@@ -126,14 +126,14 @@
             this.textBox6.Size = new System.Drawing.Size(299, 26);
             this.textBox6.TabIndex = 11;
             // 
-            // label7
+            // lblEmailCadForn
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(8, 126);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(61, 18);
-            this.label7.TabIndex = 10;
-            this.label7.Text = "E-MAIL:";
+            this.lblEmailCadForn.AutoSize = true;
+            this.lblEmailCadForn.Location = new System.Drawing.Point(8, 126);
+            this.lblEmailCadForn.Name = "lblEmailCadForn";
+            this.lblEmailCadForn.Size = new System.Drawing.Size(61, 18);
+            this.lblEmailCadForn.TabIndex = 10;
+            this.lblEmailCadForn.Text = "E-MAIL:";
             // 
             // textBox5
             // 
@@ -143,14 +143,14 @@
             this.textBox5.TabIndex = 9;
             this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
-            // label6
+            // lblTelCadForn
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(131, 91);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(88, 18);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "TELEFONE:";
+            this.lblTelCadForn.AutoSize = true;
+            this.lblTelCadForn.Location = new System.Drawing.Point(131, 91);
+            this.lblTelCadForn.Name = "lblTelCadForn";
+            this.lblTelCadForn.Size = new System.Drawing.Size(88, 18);
+            this.lblTelCadForn.TabIndex = 8;
+            this.lblTelCadForn.Text = "TELEFONE:";
             // 
             // textBox4
             // 
@@ -159,14 +159,14 @@
             this.textBox4.Size = new System.Drawing.Size(43, 26);
             this.textBox4.TabIndex = 7;
             // 
-            // label5
+            // lblDDDCadForn
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(8, 91);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(42, 18);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "DDD:";
+            this.lblDDDCadForn.AutoSize = true;
+            this.lblDDDCadForn.Location = new System.Drawing.Point(8, 91);
+            this.lblDDDCadForn.Name = "lblDDDCadForn";
+            this.lblDDDCadForn.Size = new System.Drawing.Size(42, 18);
+            this.lblDDDCadForn.TabIndex = 6;
+            this.lblDDDCadForn.Text = "DDD:";
             // 
             // textBox3
             // 
@@ -175,14 +175,14 @@
             this.textBox3.Size = new System.Drawing.Size(320, 26);
             this.textBox3.TabIndex = 5;
             // 
-            // label4
+            // lblCNPJCadForn
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(8, 59);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 18);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "CNPJ:";
+            this.lblCNPJCadForn.AutoSize = true;
+            this.lblCNPJCadForn.Location = new System.Drawing.Point(8, 59);
+            this.lblCNPJCadForn.Name = "lblCNPJCadForn";
+            this.lblCNPJCadForn.Size = new System.Drawing.Size(51, 18);
+            this.lblCNPJCadForn.TabIndex = 4;
+            this.lblCNPJCadForn.Text = "CNPJ:";
             // 
             // textBox2
             // 
@@ -198,90 +198,90 @@
             this.textBox1.Size = new System.Drawing.Size(550, 26);
             this.textBox1.TabIndex = 2;
             // 
-            // label3
+            // lblIECadForn
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(416, 59);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(26, 18);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "IE:";
+            this.lblIECadForn.AutoSize = true;
+            this.lblIECadForn.Location = new System.Drawing.Point(416, 59);
+            this.lblIECadForn.Name = "lblIECadForn";
+            this.lblIECadForn.Size = new System.Drawing.Size(26, 18);
+            this.lblIECadForn.TabIndex = 1;
+            this.lblIECadForn.Text = "IE:";
             // 
-            // label2
+            // lblRazaoCadForn
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(8, 27);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(120, 18);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "RAZÃO SOCIAL:";
+            this.lblRazaoCadForn.AutoSize = true;
+            this.lblRazaoCadForn.Location = new System.Drawing.Point(8, 27);
+            this.lblRazaoCadForn.Name = "lblRazaoCadForn";
+            this.lblRazaoCadForn.Size = new System.Drawing.Size(120, 18);
+            this.lblRazaoCadForn.TabIndex = 0;
+            this.lblRazaoCadForn.Text = "RAZÃO SOCIAL:";
             // 
-            // panel1
+            // panelcadForn
             // 
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.Location = new System.Drawing.Point(225, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(294, 50);
-            this.panel1.TabIndex = 7;
+            this.panelcadForn.Controls.Add(this.lblCadastroForn);
+            this.panelcadForn.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panelcadForn.Location = new System.Drawing.Point(13, -3);
+            this.panelcadForn.Name = "panelcadForn";
+            this.panelcadForn.Size = new System.Drawing.Size(294, 50);
+            this.panelcadForn.TabIndex = 7;
             // 
-            // label1
+            // lblCadastroForn
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 11);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(285, 27);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "CADASTRO FORNECEDOR";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.lblCadastroForn.AutoSize = true;
+            this.lblCadastroForn.Location = new System.Drawing.Point(6, 11);
+            this.lblCadastroForn.Name = "lblCadastroForn";
+            this.lblCadastroForn.Size = new System.Drawing.Size(285, 27);
+            this.lblCadastroForn.TabIndex = 0;
+            this.lblCadastroForn.Text = "CADASTRO FORNECEDOR";
+            this.lblCadastroForn.Click += new System.EventHandler(this.label1_Click);
             // 
-            // panel3
+            // panelCadEndForn
             // 
-            this.panel3.Controls.Add(this.button2);
-            this.panel3.Controls.Add(this.button1);
-            this.panel3.Controls.Add(this.textBox15);
-            this.panel3.Controls.Add(this.label17);
-            this.panel3.Controls.Add(this.textBox14);
-            this.panel3.Controls.Add(this.label16);
-            this.panel3.Controls.Add(this.textBox13);
-            this.panel3.Controls.Add(this.label15);
-            this.panel3.Controls.Add(this.textBox7);
-            this.panel3.Controls.Add(this.label9);
-            this.panel3.Controls.Add(this.textBox8);
-            this.panel3.Controls.Add(this.label10);
-            this.panel3.Controls.Add(this.textBox10);
-            this.panel3.Controls.Add(this.label12);
-            this.panel3.Controls.Add(this.textBox11);
-            this.panel3.Controls.Add(this.textBox12);
-            this.panel3.Controls.Add(this.label13);
-            this.panel3.Controls.Add(this.label14);
-            this.panel3.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold);
-            this.panel3.Location = new System.Drawing.Point(13, 265);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(696, 173);
-            this.panel3.TabIndex = 9;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            this.panelCadEndForn.Controls.Add(this.btnCancelarCadForn);
+            this.panelCadEndForn.Controls.Add(this.btnCadastrarCadForn);
+            this.panelCadEndForn.Controls.Add(this.textBox15);
+            this.panelCadEndForn.Controls.Add(this.lblRefCadForn);
+            this.panelCadEndForn.Controls.Add(this.textBox14);
+            this.panelCadEndForn.Controls.Add(this.lblCompCadForn);
+            this.panelCadEndForn.Controls.Add(this.textBox13);
+            this.panelCadEndForn.Controls.Add(this.lblEndCadForn);
+            this.panelCadEndForn.Controls.Add(this.textBox7);
+            this.panelCadEndForn.Controls.Add(this.lblEstadoCadForn);
+            this.panelCadEndForn.Controls.Add(this.textBox8);
+            this.panelCadEndForn.Controls.Add(this.lblCidadeCadForn);
+            this.panelCadEndForn.Controls.Add(this.textBox10);
+            this.panelCadEndForn.Controls.Add(this.lblNumCadForn);
+            this.panelCadEndForn.Controls.Add(this.textBox11);
+            this.panelCadEndForn.Controls.Add(this.textBox12);
+            this.panelCadEndForn.Controls.Add(this.lblBairroCadForn);
+            this.panelCadEndForn.Controls.Add(this.lblCepCadForn);
+            this.panelCadEndForn.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold);
+            this.panelCadEndForn.Location = new System.Drawing.Point(13, 265);
+            this.panelCadEndForn.Name = "panelCadEndForn";
+            this.panelCadEndForn.Size = new System.Drawing.Size(696, 173);
+            this.panelCadEndForn.TabIndex = 9;
+            this.panelCadEndForn.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
-            // button2
+            // btnCancelarCadForn
             // 
-            this.button2.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button2.Location = new System.Drawing.Point(475, 141);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(104, 23);
-            this.button2.TabIndex = 30;
-            this.button2.Text = "CANCELAR";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.clickCancelarFornecedor);
+            this.btnCancelarCadForn.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnCancelarCadForn.Location = new System.Drawing.Point(475, 141);
+            this.btnCancelarCadForn.Name = "btnCancelarCadForn";
+            this.btnCancelarCadForn.Size = new System.Drawing.Size(104, 23);
+            this.btnCancelarCadForn.TabIndex = 30;
+            this.btnCancelarCadForn.Text = "CANCELAR";
+            this.btnCancelarCadForn.UseVisualStyleBackColor = true;
+            this.btnCancelarCadForn.Click += new System.EventHandler(this.clickCancelarFornecedor);
             // 
-            // button1
+            // btnCadastrarCadForn
             // 
-            this.button1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button1.Location = new System.Drawing.Point(585, 141);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(104, 23);
-            this.button1.TabIndex = 31;
-            this.button1.Text = "CADASTRAR";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnCadastrarCadForn.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnCadastrarCadForn.Location = new System.Drawing.Point(585, 141);
+            this.btnCadastrarCadForn.Name = "btnCadastrarCadForn";
+            this.btnCadastrarCadForn.Size = new System.Drawing.Size(104, 23);
+            this.btnCadastrarCadForn.TabIndex = 31;
+            this.btnCadastrarCadForn.Text = "CADASTRAR";
+            this.btnCadastrarCadForn.UseVisualStyleBackColor = true;
             // 
             // textBox15
             // 
@@ -290,14 +290,14 @@
             this.textBox15.Size = new System.Drawing.Size(164, 26);
             this.textBox15.TabIndex = 29;
             // 
-            // label17
+            // lblRefCadForn
             // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(10, 149);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(104, 18);
-            this.label17.TabIndex = 28;
-            this.label17.Text = "REFERÊNCIA:";
+            this.lblRefCadForn.AutoSize = true;
+            this.lblRefCadForn.Location = new System.Drawing.Point(10, 149);
+            this.lblRefCadForn.Name = "lblRefCadForn";
+            this.lblRefCadForn.Size = new System.Drawing.Size(104, 18);
+            this.lblRefCadForn.TabIndex = 28;
+            this.lblRefCadForn.Text = "REFERÊNCIA:";
             // 
             // textBox14
             // 
@@ -306,15 +306,15 @@
             this.textBox14.Size = new System.Drawing.Size(127, 26);
             this.textBox14.TabIndex = 27;
             // 
-            // label16
+            // lblCompCadForn
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(181, 50);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(124, 18);
-            this.label16.TabIndex = 26;
-            this.label16.Text = "COMPLEMENTO:";
-            this.label16.Click += new System.EventHandler(this.label16_Click);
+            this.lblCompCadForn.AutoSize = true;
+            this.lblCompCadForn.Location = new System.Drawing.Point(181, 50);
+            this.lblCompCadForn.Name = "lblCompCadForn";
+            this.lblCompCadForn.Size = new System.Drawing.Size(124, 18);
+            this.lblCompCadForn.TabIndex = 26;
+            this.lblCompCadForn.Text = "COMPLEMENTO:";
+            this.lblCompCadForn.Click += new System.EventHandler(this.label16_Click);
             // 
             // textBox13
             // 
@@ -323,14 +323,14 @@
             this.textBox13.Size = new System.Drawing.Size(358, 26);
             this.textBox13.TabIndex = 25;
             // 
-            // label15
+            // lblEndCadForn
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(246, 18);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(91, 18);
-            this.label15.TabIndex = 24;
-            this.label15.Text = "ENDEREÇO:";
+            this.lblEndCadForn.AutoSize = true;
+            this.lblEndCadForn.Location = new System.Drawing.Point(246, 18);
+            this.lblEndCadForn.Name = "lblEndCadForn";
+            this.lblEndCadForn.Size = new System.Drawing.Size(91, 18);
+            this.lblEndCadForn.TabIndex = 24;
+            this.lblEndCadForn.Text = "ENDEREÇO:";
             // 
             // textBox7
             // 
@@ -339,14 +339,14 @@
             this.textBox7.Size = new System.Drawing.Size(203, 26);
             this.textBox7.TabIndex = 23;
             // 
-            // label9
+            // lblEstadoCadForn
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(10, 117);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(69, 18);
-            this.label9.TabIndex = 22;
-            this.label9.Text = "ESTADO:";
+            this.lblEstadoCadForn.AutoSize = true;
+            this.lblEstadoCadForn.Location = new System.Drawing.Point(10, 117);
+            this.lblEstadoCadForn.Name = "lblEstadoCadForn";
+            this.lblEstadoCadForn.Size = new System.Drawing.Size(69, 18);
+            this.lblEstadoCadForn.TabIndex = 22;
+            this.lblEstadoCadForn.Text = "ESTADO:";
             // 
             // textBox8
             // 
@@ -355,14 +355,14 @@
             this.textBox8.Size = new System.Drawing.Size(203, 26);
             this.textBox8.TabIndex = 21;
             // 
-            // label10
+            // lblCidadeCadForn
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(10, 85);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(65, 18);
-            this.label10.TabIndex = 20;
-            this.label10.Text = "CIDADE:";
+            this.lblCidadeCadForn.AutoSize = true;
+            this.lblCidadeCadForn.Location = new System.Drawing.Point(10, 85);
+            this.lblCidadeCadForn.Name = "lblCidadeCadForn";
+            this.lblCidadeCadForn.Size = new System.Drawing.Size(65, 18);
+            this.lblCidadeCadForn.TabIndex = 20;
+            this.lblCidadeCadForn.Text = "CIDADE:";
             // 
             // textBox10
             // 
@@ -371,14 +371,14 @@
             this.textBox10.Size = new System.Drawing.Size(66, 26);
             this.textBox10.TabIndex = 17;
             // 
-            // label12
+            // lblNumCadForn
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(10, 50);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(76, 18);
-            this.label12.TabIndex = 16;
-            this.label12.Text = "NÚMERO:";
+            this.lblNumCadForn.AutoSize = true;
+            this.lblNumCadForn.Location = new System.Drawing.Point(10, 50);
+            this.lblNumCadForn.Name = "lblNumCadForn";
+            this.lblNumCadForn.Size = new System.Drawing.Size(76, 18);
+            this.lblNumCadForn.TabIndex = 16;
+            this.lblNumCadForn.Text = "NÚMERO:";
             // 
             // textBox11
             // 
@@ -394,106 +394,106 @@
             this.textBox12.Size = new System.Drawing.Size(173, 26);
             this.textBox12.TabIndex = 14;
             // 
-            // label13
+            // lblBairroCadForn
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(455, 50);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(68, 18);
-            this.label13.TabIndex = 13;
-            this.label13.Text = "BAIRRO:";
-            this.label13.Click += new System.EventHandler(this.label13_Click);
+            this.lblBairroCadForn.AutoSize = true;
+            this.lblBairroCadForn.Location = new System.Drawing.Point(455, 50);
+            this.lblBairroCadForn.Name = "lblBairroCadForn";
+            this.lblBairroCadForn.Size = new System.Drawing.Size(68, 18);
+            this.lblBairroCadForn.TabIndex = 13;
+            this.lblBairroCadForn.Text = "BAIRRO:";
+            this.lblBairroCadForn.Click += new System.EventHandler(this.label13_Click);
             // 
-            // label14
+            // lblCepCadForn
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(10, 18);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(40, 18);
-            this.label14.TabIndex = 12;
-            this.label14.Text = "CEP:";
+            this.lblCepCadForn.AutoSize = true;
+            this.lblCepCadForn.Location = new System.Drawing.Point(10, 18);
+            this.lblCepCadForn.Name = "lblCepCadForn";
+            this.lblCepCadForn.Size = new System.Drawing.Size(40, 18);
+            this.lblCepCadForn.TabIndex = 12;
+            this.lblCepCadForn.Text = "CEP:";
             // 
-            // panel4
+            // panelCodCadForn
             // 
-            this.panel4.Controls.Add(this.label25);
-            this.panel4.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel4.Location = new System.Drawing.Point(542, -3);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(194, 69);
-            this.panel4.TabIndex = 12;
+            this.panelCodCadForn.Controls.Add(this.lblCodIntForn);
+            this.panelCodCadForn.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panelCodCadForn.Location = new System.Drawing.Point(542, 8);
+            this.panelCodCadForn.Name = "panelCodCadForn";
+            this.panelCodCadForn.Size = new System.Drawing.Size(160, 39);
+            this.panelCodCadForn.TabIndex = 12;
             // 
-            // label25
+            // lblCodIntForn
             // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(5, 27);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(113, 18);
-            this.label25.TabIndex = 0;
-            this.label25.Text = "CÓD. CLIENTE:";
+            this.lblCodIntForn.AutoSize = true;
+            this.lblCodIntForn.Location = new System.Drawing.Point(3, 9);
+            this.lblCodIntForn.Name = "lblCodIntForn";
+            this.lblCodIntForn.Size = new System.Drawing.Size(151, 18);
+            this.lblCodIntForn.TabIndex = 0;
+            this.lblCodIntForn.Text = "CÓD. FORNECEDOR:";
             // 
             // CadastroFornecedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelCodCadForn);
+            this.Controls.Add(this.panelCadEndForn);
+            this.Controls.Add(this.panelCadastroForn);
+            this.Controls.Add(this.panelcadForn);
             this.Name = "CadastroFornecedor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CadastroFornecedor";
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
+            this.panelCadastroForn.ResumeLayout(false);
+            this.panelCadastroForn.PerformLayout();
+            this.panelcadForn.ResumeLayout(false);
+            this.panelcadForn.PerformLayout();
+            this.panelCadEndForn.ResumeLayout(false);
+            this.panelCadEndForn.PerformLayout();
+            this.panelCodCadForn.ResumeLayout(false);
+            this.panelCodCadForn.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel2;
-        public System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Panel panelCadastroForn;
+        public System.Windows.Forms.Label lblTipagemCadForn;
         private System.Windows.Forms.TextBox textBox6;
-        public System.Windows.Forms.Label label7;
+        public System.Windows.Forms.Label lblEmailCadForn;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblTelCadForn;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblDDDCadForn;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblCNPJCadForn;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblIECadForn;
+        private System.Windows.Forms.Label lblRazaoCadForn;
+        private System.Windows.Forms.Panel panelcadForn;
+        private System.Windows.Forms.Label lblCadastroForn;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panelCadEndForn;
         private System.Windows.Forms.TextBox textBox7;
-        public System.Windows.Forms.Label label9;
+        public System.Windows.Forms.Label lblEstadoCadForn;
         private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lblCidadeCadForn;
         private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label lblNumCadForn;
         private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label lblBairroCadForn;
+        private System.Windows.Forms.Label lblCepCadForn;
         private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label lblCompCadForn;
         private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label lblEndCadForn;
         private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label lblRefCadForn;
+        private System.Windows.Forms.Button btnCancelarCadForn;
+        private System.Windows.Forms.Button btnCadastrarCadForn;
+        private System.Windows.Forms.Panel panelCodCadForn;
+        private System.Windows.Forms.Label lblCodIntForn;
     }
 }

@@ -41,5 +41,10 @@ namespace Cadastro
         {
             this.Close();
         }
+
+        private void lblCodIntProd_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
