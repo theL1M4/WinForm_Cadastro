@@ -37,15 +37,15 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.button7 = new System.Windows.Forms.Button();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblCodForn = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblCNPJForn = new System.Windows.Forms.Label();
+            this.lblRazaoForn = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblFornecedores = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnCancelarBuscaForn = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
@@ -107,13 +107,13 @@
             // 
             this.panel2.Controls.Add(this.button7);
             this.panel2.Controls.Add(this.textBox3);
-            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.lblCodForn);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.textBox2);
             this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.lblCNPJForn);
+            this.panel2.Controls.Add(this.lblRazaoForn);
             this.panel2.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel2.Location = new System.Drawing.Point(12, 91);
             this.panel2.Name = "panel2";
@@ -137,14 +137,14 @@
             this.textBox3.Size = new System.Drawing.Size(308, 26);
             this.textBox3.TabIndex = 7;
             // 
-            // label4
+            // lblCodForn
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(8, 89);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(151, 18);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "CÓD. FORNECEDOR:";
+            this.lblCodForn.AutoSize = true;
+            this.lblCodForn.Location = new System.Drawing.Point(8, 89);
+            this.lblCodForn.Name = "lblCodForn";
+            this.lblCodForn.Size = new System.Drawing.Size(151, 18);
+            this.lblCodForn.TabIndex = 6;
+            this.lblCodForn.Text = "CÓD. FORNECEDOR:";
             // 
             // button2
             // 
@@ -180,41 +180,41 @@
             this.textBox1.Size = new System.Drawing.Size(308, 26);
             this.textBox1.TabIndex = 2;
             // 
-            // label3
+            // lblCNPJForn
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(108, 59);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(51, 18);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "CNPJ:";
+            this.lblCNPJForn.AutoSize = true;
+            this.lblCNPJForn.Location = new System.Drawing.Point(108, 59);
+            this.lblCNPJForn.Name = "lblCNPJForn";
+            this.lblCNPJForn.Size = new System.Drawing.Size(51, 18);
+            this.lblCNPJForn.TabIndex = 1;
+            this.lblCNPJForn.Text = "CNPJ:";
             // 
-            // label2
+            // lblRazaoForn
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(39, 27);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(120, 18);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "RAZÃO SOCIAL:";
+            this.lblRazaoForn.AutoSize = true;
+            this.lblRazaoForn.Location = new System.Drawing.Point(39, 27);
+            this.lblRazaoForn.Name = "lblRazaoForn";
+            this.lblRazaoForn.Size = new System.Drawing.Size(120, 18);
+            this.lblRazaoForn.TabIndex = 0;
+            this.lblRazaoForn.Text = "RAZÃO SOCIAL:";
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.lblFornecedores);
             this.panel1.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 50);
             this.panel1.TabIndex = 4;
             // 
-            // label1
+            // lblFornecedores
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 10);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(189, 27);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "FORNECEDORES";
+            this.lblFornecedores.AutoSize = true;
+            this.lblFornecedores.Location = new System.Drawing.Point(3, 10);
+            this.lblFornecedores.Name = "lblFornecedores";
+            this.lblFornecedores.Size = new System.Drawing.Size(189, 27);
+            this.lblFornecedores.TabIndex = 0;
+            this.lblFornecedores.Text = "FORNECEDORES";
             // 
             // panel4
             // 
@@ -247,7 +247,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "BuscaFornecedor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "BuscaFornecedor";
+            this.Text = "Busca de Fornecedor";
             this.Click += new System.EventHandler(this.clickHome);
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -271,13 +271,13 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblCNPJForn;
+        private System.Windows.Forms.Label lblRazaoForn;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblFornecedores;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblCodForn;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button btnCancelarBuscaForn;
     }

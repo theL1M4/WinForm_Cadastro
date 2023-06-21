@@ -442,7 +442,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "CadastroFornecedor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "CadastroFornecedor";
+            this.Text = "Cadastro de Fornecedor";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
