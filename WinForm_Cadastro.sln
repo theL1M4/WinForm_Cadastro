@@ -5,6 +5,8 @@ VisualStudioVersion = 17.6.33723.286
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cadastro", "Cadastro\Cadastro.csproj", "{DB1CDD1E-DCB3-4F1F-A13F-976DC7B6A731}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atividade ADO", "Atividade ADO\Atividade ADO.csproj", "{6183F64E-384F-4F9A-A8B3-EA217F8B75F5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{DB1CDD1E-DCB3-4F1F-A13F-976DC7B6A731}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB1CDD1E-DCB3-4F1F-A13F-976DC7B6A731}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB1CDD1E-DCB3-4F1F-A13F-976DC7B6A731}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6183F64E-384F-4F9A-A8B3-EA217F8B75F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6183F64E-384F-4F9A-A8B3-EA217F8B75F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6183F64E-384F-4F9A-A8B3-EA217F8B75F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6183F64E-384F-4F9A-A8B3-EA217F8B75F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
