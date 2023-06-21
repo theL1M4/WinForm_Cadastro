@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Atividade_ADO
 {
-    public partial class Form1 : Form
+    public partial class frmCadastroCliente : Form
     {
-        public Form1()
+        public frmCadastroCliente()
         {
             InitializeComponent();
         }
