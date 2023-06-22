@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\ConectaBD.cs" />
+    <Compile Include="Data\DataCliente.cs" />
     <Compile Include="frmCadastroCliente.cs">
       <SubType>Form</SubType>
     </Compile>
