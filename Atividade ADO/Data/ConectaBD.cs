@@ -8,6 +8,6 @@ namespace Atividade_ADO.Data
 {
     internal class ConectaBD
     {
-        string ConnctionString = @"Data Source="
+        string ConnctionString = @"Data Source"
     }
 }
