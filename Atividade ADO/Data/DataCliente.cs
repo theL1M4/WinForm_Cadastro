@@ -23,7 +23,6 @@ namespace Atividade_ADO.Data
             sqlCMD.Parameters.AddWithValue("@email", cliente.Email);
             sqlCMD.Parameters.AddWithValue("@data", DateTime.Now.ToString());
             sqlCMD.ExecuteNonQuery();
-
         }
     }
 }
