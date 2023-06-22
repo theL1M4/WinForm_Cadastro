@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace Atividade_ADO.Data
 {
-    internal class ConectaBD
+    internal class Cliente
     {
-        string ConnctionString = @"Data Source="
     }
 }
