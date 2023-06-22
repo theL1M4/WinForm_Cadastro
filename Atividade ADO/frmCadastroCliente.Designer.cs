@@ -31,15 +31,15 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.lblNome = new System.Windows.Forms.Label();
-            this.lblUsuario = new System.Windows.Forms.Label();
-            this.lblTelefone = new System.Windows.Forms.Label();
-            this.lblEmail = new System.Windows.Forms.Label();
-            this.txtNome = new System.Windows.Forms.TextBox();
-            this.txtUsuario = new System.Windows.Forms.TextBox();
-            this.btnCadastrar = new System.Windows.Forms.Button();
-            this.txtTelefone = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtTelefone = new System.Windows.Forms.TextBox();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.txtNome = new System.Windows.Forms.TextBox();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.lblTelefone = new System.Windows.Forms.Label();
+            this.lblUsuario = new System.Windows.Forms.Label();
+            this.lblNome = new System.Windows.Forms.Label();
+            this.btnCadastrar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -61,7 +61,6 @@
             this.lblTitulo.Size = new System.Drawing.Size(188, 25);
             this.lblTitulo.TabIndex = 0;
             this.lblTitulo.Text = "Cadastro Cliente";
-            this.lblTitulo.Click += new System.EventHandler(this.lblTitulo_Click);
             // 
             // panel2
             // 
@@ -79,32 +78,33 @@
             this.panel2.Size = new System.Drawing.Size(757, 232);
             this.panel2.TabIndex = 1;
             // 
-            // lblNome
+            // txtEmail
             // 
-            this.lblNome.AutoSize = true;
-            this.lblNome.Location = new System.Drawing.Point(16, 22);
-            this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(55, 20);
-            this.lblNome.TabIndex = 0;
-            this.lblNome.Text = "Nome";
+            this.txtEmail.Location = new System.Drawing.Point(551, 116);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(203, 26);
+            this.txtEmail.TabIndex = 9;
             // 
-            // lblUsuario
+            // txtTelefone
             // 
-            this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Location = new System.Drawing.Point(16, 89);
-            this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(71, 20);
-            this.lblUsuario.TabIndex = 1;
-            this.lblUsuario.Text = "Usuário";
+            this.txtTelefone.Location = new System.Drawing.Point(271, 116);
+            this.txtTelefone.Name = "txtTelefone";
+            this.txtTelefone.Size = new System.Drawing.Size(198, 26);
+            this.txtTelefone.TabIndex = 8;
             // 
-            // lblTelefone
+            // txtUsuario
             // 
-            this.lblTelefone.AutoSize = true;
-            this.lblTelefone.Location = new System.Drawing.Point(267, 89);
-            this.lblTelefone.Name = "lblTelefone";
-            this.lblTelefone.Size = new System.Drawing.Size(79, 20);
-            this.lblTelefone.TabIndex = 2;
-            this.lblTelefone.Text = "Telefone";
+            this.txtUsuario.Location = new System.Drawing.Point(16, 116);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(195, 26);
+            this.txtUsuario.TabIndex = 5;
+            // 
+            // txtNome
+            // 
+            this.txtNome.Location = new System.Drawing.Point(16, 49);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(738, 26);
+            this.txtNome.TabIndex = 4;
             // 
             // lblEmail
             // 
@@ -115,19 +115,32 @@
             this.lblEmail.TabIndex = 3;
             this.lblEmail.Text = "E-mail";
             // 
-            // txtNome
+            // lblTelefone
             // 
-            this.txtNome.Location = new System.Drawing.Point(16, 49);
-            this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(738, 26);
-            this.txtNome.TabIndex = 4;
+            this.lblTelefone.AutoSize = true;
+            this.lblTelefone.Location = new System.Drawing.Point(267, 89);
+            this.lblTelefone.Name = "lblTelefone";
+            this.lblTelefone.Size = new System.Drawing.Size(79, 20);
+            this.lblTelefone.TabIndex = 2;
+            this.lblTelefone.Text = "Telefone";
             // 
-            // txtUsuario
+            // lblUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(16, 116);
-            this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(195, 26);
-            this.txtUsuario.TabIndex = 5;
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.Location = new System.Drawing.Point(16, 89);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(71, 20);
+            this.lblUsuario.TabIndex = 1;
+            this.lblUsuario.Text = "Usuário";
+            // 
+            // lblNome
+            // 
+            this.lblNome.AutoSize = true;
+            this.lblNome.Location = new System.Drawing.Point(16, 22);
+            this.lblNome.Name = "lblNome";
+            this.lblNome.Size = new System.Drawing.Size(55, 20);
+            this.lblNome.TabIndex = 0;
+            this.lblNome.Text = "Nome";
             // 
             // btnCadastrar
             // 
@@ -138,21 +151,7 @@
             this.btnCadastrar.TabIndex = 2;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = true;
-            // 
-            // txtTelefone
-            // 
-            this.txtTelefone.Location = new System.Drawing.Point(271, 116);
-            this.txtTelefone.Name = "txtTelefone";
-            this.txtTelefone.Size = new System.Drawing.Size(198, 26);
-            this.txtTelefone.TabIndex = 8;
-            // 
-            // txtEmail
-            // 
-            this.txtEmail.Location = new System.Drawing.Point(551, 116);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(203, 26);
-            this.txtEmail.TabIndex = 9;
-            this.txtEmail.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.btnCadastrar.Click += new System.EventHandler(this.CadastrarCliente);
             // 
             // frmCadastroCliente
             // 

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Atividade_ADO.Data
 {
-    public class DataCliente
+    class DataCliente
     {
         readonly ConectaBD sqlConn = new ConectaBD();
         readonly SqlCommand sqlCMD = new SqlCommand();

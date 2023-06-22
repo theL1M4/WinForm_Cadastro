@@ -17,12 +17,8 @@ namespace Atividade_ADO
             InitializeComponent();
         }
 
-        private void lblTitulo_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
+        private void CadastrarCliente(object sender, EventArgs e)
         {
 
         }
