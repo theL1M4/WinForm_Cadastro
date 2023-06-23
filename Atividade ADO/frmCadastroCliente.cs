@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Atividade_ADO.Data;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace Atividade_ADO
 {
     public partial class frmCadastroCliente : Form
     {
+        Cliente oCliente = new Cliente();
         public frmCadastroCliente()
         {
             InitializeComponent();
@@ -20,7 +22,16 @@ namespace Atividade_ADO
 
         private void CadastrarCliente(object sender, EventArgs e)
         {
+            oCliente.Nome = txtNome.Text.ToLower();
+            oCliente.Usuario = txtUsuario.Text.ToLower();
+            oCliente.Email = txtEmail.Text.ToLower();
+            oCliente.Telefone = txtTelefone.Text.ToLower();
 
+            //INSTANCIANDO CLASSE DATACLIENTE
+            DataCliente dataCliente = new DataCliente();
+
+            //CHAMANDO METODO INSERIR NA CLASSE DATACLIENTE
+            dataCliente.Inserir(oCliente);
         }
     }
 }
