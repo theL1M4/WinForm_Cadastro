@@ -4,6 +4,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace Atividade_ADO.Data
 {
@@ -15,13 +16,13 @@ namespace Atividade_ADO.Data
         public void Inserir(Cliente cliente)
         {
             sqlConn.AbreBanco();
-            string strCMD = "insert";
+            string strCMD = "INSERT INTO CLIENTES(Nome,Usuario,Telefone,Email,DtCadastro) VALUES(@Nome, @Usuario, @Telefone, @Email, @DtCliente)";
             sqlCMD.CommandText = strCMD;
-            sqlCMD.Parameters.AddWithValue("@nome", cliente.Nome);
-            sqlCMD.Parameters.AddWithValue("@usuario", cliente.Usuario);
-            sqlCMD.Parameters.AddWithValue("@telefone", cliente.Telefone);
-            sqlCMD.Parameters.AddWithValue("@email", cliente.Email);
-            sqlCMD.Parameters.AddWithValue("@data", DateTime.Now.ToString());
+            sqlCMD.Parameters.AddWithValue("@Nome", cliente.Nome);
+            sqlCMD.Parameters.AddWithValue("@Usuario", cliente.Usuario);
+            sqlCMD.Parameters.AddWithValue("@Telefone", cliente.Telefone);
+            sqlCMD.Parameters.AddWithValue("@Email", cliente.Email);
+            sqlCMD.Parameters.AddWithValue("@Data", DateTime.Now.ToString());
             sqlCMD.ExecuteNonQuery();
         }
     }
