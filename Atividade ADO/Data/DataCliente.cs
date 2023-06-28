@@ -16,13 +16,13 @@ namespace Atividade_ADO.Data
         public void Inserir(Cliente cliente)
         {
             sqlConn.AbreBanco();
-            string strCMD = "INSERT INTO CLIENTES(Nome,Usuario,Telefone,Email,DtCadastro) VALUES(@Nome, @Usuario, @Telefone, @Email, @DtCliente)";
+            string strCMD = "INSERT INTO CLIENTES(Nome,Usuario,Telefone,Email,DtCadastro) VALUES(@Nome, @Usuario, @Telefone, @Email, @DtCadastro)";
             sqlCMD.CommandText = strCMD;
             sqlCMD.Parameters.AddWithValue("@Nome", cliente.Nome);
             sqlCMD.Parameters.AddWithValue("@Usuario", cliente.Usuario);
             sqlCMD.Parameters.AddWithValue("@Telefone", cliente.Telefone);
             sqlCMD.Parameters.AddWithValue("@Email", cliente.Email);
-            sqlCMD.Parameters.AddWithValue("@Data", DateTime.Now.ToString());
+            sqlCMD.Parameters.AddWithValue("@DtCadastro", DateTime.Now.ToString());
             sqlCMD.ExecuteNonQuery();
         }
     }
