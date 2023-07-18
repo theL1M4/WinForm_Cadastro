@@ -20,6 +20,7 @@ namespace Atividade_ADO.Data
             conn.Open();
             string strCMD = "INSERT INTO CLIENTES(Nome,Usuario,Telefone,Email,DtCadastro) VALUES(@Nome, @Usuario, @Telefone, @Email, @DtCadastro)";
             sqlCMD.CommandText = strCMD;
+            sqlCMD.Connection = conn;
             sqlCMD.Parameters.AddWithValue("@Nome", cliente.Nome);
             sqlCMD.Parameters.AddWithValue("@Usuario", cliente.Usuario);
             sqlCMD.Parameters.AddWithValue("@Telefone", cliente.Telefone);
