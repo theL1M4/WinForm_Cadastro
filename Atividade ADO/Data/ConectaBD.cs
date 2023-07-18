@@ -10,7 +10,7 @@ namespace Atividade_ADO.Data
     internal class ConectaBD
     {
         string ConnctionString = @"Data Source=JUN0675589W10-1\BDSENAC;" +
-            "Initial Catalog=AtividadeBD;" +
+            "Initial Catalog=AtvBD;" +
             "User ID=senaclivre;" +
             "Password='senaclivre'";
         public SqlConnection SqlConn()
