@@ -25,6 +25,7 @@ namespace Atividade_ADO.Data
             sqlCMD.Parameters.AddWithValue("@Telefone", produto.UnMedidaProd);
             sqlCMD.Parameters.AddWithValue("@Email", produto.QuantidadeProd);
             sqlCMD.ExecuteNonQuery();
+
         }
     }
 }
