@@ -9,10 +9,10 @@ namespace Atividade_ADO.Data
 {
     internal class ConectaBD
     {
-        string ConnctionString = @"Data Source=NOTEBOOK\SQLEXPRESS;" +
-            "Initial Catalog=AtividadeBD;" +
-            "User ID=aluno;" +
-            "Password='123'";
+        string ConnctionString = @"Data Source=JUN0675589W10-1\BDSENAC;" +
+            "Initial Catalog=AtvBD;" +
+            "User ID=senaclivre;" +
+            "Password='senaclivre'";
         public SqlConnection SqlConn()
         {
             SqlConnection sqlConn = new SqlConnection(ConnctionString);
