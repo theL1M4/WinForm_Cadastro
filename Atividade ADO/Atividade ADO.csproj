@@ -49,6 +49,8 @@
     <Compile Include="Data\Cliente.cs" />
     <Compile Include="Data\ConectaBD.cs" />
     <Compile Include="Data\DataCliente.cs" />
+    <Compile Include="Data\DataProduto.cs" />
+    <Compile Include="Data\Produto.cs" />
     <Compile Include="frmCadastroCliente.cs">
       <SubType>Form</SubType>
     </Compile>
