@@ -28,72 +28,85 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnlTituloInicio = new System.Windows.Forms.Panel();
             this.lblTitulo = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
+            this.btnChamaCadCliente = new System.Windows.Forms.Button();
+            this.btnChamaCadProduto = new System.Windows.Forms.Button();
+            this.pnlClicks = new System.Windows.Forms.Panel();
+            this.pnlTituloInicio.SuspendLayout();
+            this.pnlClicks.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // pnlTituloInicio
             // 
-            this.panel1.Controls.Add(this.lblTitulo);
-            this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.Location = new System.Drawing.Point(282, 35);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 100);
-            this.panel1.TabIndex = 0;
+            this.pnlTituloInicio.Controls.Add(this.lblTitulo);
+            this.pnlTituloInicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnlTituloInicio.Location = new System.Drawing.Point(280, 124);
+            this.pnlTituloInicio.Name = "pnlTituloInicio";
+            this.pnlTituloInicio.Size = new System.Drawing.Size(265, 100);
+            this.pnlTituloInicio.TabIndex = 0;
             // 
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Location = new System.Drawing.Point(25, 21);
+            this.lblTitulo.Location = new System.Drawing.Point(42, 33);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(137, 24);
+            this.lblTitulo.Size = new System.Drawing.Size(189, 31);
             this.lblTitulo.TabIndex = 0;
             this.lblTitulo.Text = "Tela de Início";
             // 
-            // button1
+            // btnChamaCadCliente
             // 
-            this.button1.Location = new System.Drawing.Point(109, 258);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(111, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Cadastro de Cliente";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.TelaCadastrarCliente);
+            this.btnChamaCadCliente.Location = new System.Drawing.Point(3, 36);
+            this.btnChamaCadCliente.Name = "btnChamaCadCliente";
+            this.btnChamaCadCliente.Size = new System.Drawing.Size(110, 110);
+            this.btnChamaCadCliente.TabIndex = 1;
+            this.btnChamaCadCliente.Text = "Cadastro de Cliente";
+            this.btnChamaCadCliente.UseVisualStyleBackColor = true;
+            this.btnChamaCadCliente.Click += new System.EventHandler(this.TelaCadastrarCliente);
             // 
-            // button2
+            // btnChamaCadProduto
             // 
-            this.button2.Location = new System.Drawing.Point(534, 257);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(128, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Cadastro de Produto";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.TelaCadastrarProduto);
+            this.btnChamaCadProduto.Location = new System.Drawing.Point(367, 36);
+            this.btnChamaCadProduto.Name = "btnChamaCadProduto";
+            this.btnChamaCadProduto.Size = new System.Drawing.Size(110, 110);
+            this.btnChamaCadProduto.TabIndex = 2;
+            this.btnChamaCadProduto.Text = "Cadastro de Produto";
+            this.btnChamaCadProduto.UseVisualStyleBackColor = true;
+            this.btnChamaCadProduto.Click += new System.EventHandler(this.TelaCadastrarProduto);
+            // 
+            // pnlClicks
+            // 
+            this.pnlClicks.Controls.Add(this.btnChamaCadCliente);
+            this.pnlClicks.Controls.Add(this.btnChamaCadProduto);
+            this.pnlClicks.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnlClicks.Location = new System.Drawing.Point(161, 230);
+            this.pnlClicks.Name = "pnlClicks";
+            this.pnlClicks.Size = new System.Drawing.Size(480, 183);
+            this.pnlClicks.TabIndex = 3;
             // 
             // frmTelaInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnlClicks);
+            this.Controls.Add(this.pnlTituloInicio);
             this.Name = "frmTelaInicio";
             this.Text = "frmTelaInicio";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.pnlTituloInicio.ResumeLayout(false);
+            this.pnlTituloInicio.PerformLayout();
+            this.pnlClicks.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnlTituloInicio;
         private System.Windows.Forms.Label lblTitulo;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnChamaCadCliente;
+        private System.Windows.Forms.Button btnChamaCadProduto;
+        private System.Windows.Forms.Panel pnlClicks;
     }
 }
