@@ -24,8 +24,6 @@ DECLARE @DtCliente AS NVARCHAR(20)='12/12/2012'
 INSERT INTO CLIENTES(Nome,Usuario,Telefone,Email,DtCadastro)
 VALUES(@Nome,@Usuario,@Telefone,@Email,@DtCliente)
 go
-SELECT * FROM CLIENTES
-go
 
 
 CREATE TABLE PRODUTOS(
@@ -35,4 +33,13 @@ TipoProd NVARCHAR(50) NOT NULL,
 UnMedidaProd NVARCHAR(2) NOT NULL,
 QuantidadeProd NVARCHAR(5) NOT NULL)
 GO
+
+DECLARE @NomeProd AS NVARCHAR(200)='TESTE1'
+DECLARE @TipoProd AS NVARCHAR(50)='TESTE1'
+DECLARE @UnMedidaProd AS NVARCHAR(20)='(11)1234-5678'
+DECLARE @QuantidadeProd AS NVARCHAR(200)='TESTE@TESTE.COM'
+INSERT INTO PRODUTOS(NomeProd,TipoProd,UnMedidaProd,QuantidadeProd)
+VALUES(@NomeProd,@TipoProd,@UnMedidaProd,@QuantidadeProd)
+go
+
 
