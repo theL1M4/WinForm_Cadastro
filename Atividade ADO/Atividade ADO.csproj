@@ -57,6 +57,12 @@
     <Compile Include="frmCadastroCliente.Designer.cs">
       <DependentUpon>frmCadastroCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCadastroConfirmado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroConfirmado.Designer.cs">
+      <DependentUpon>frmCadastroConfirmado.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCadastroProduto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +79,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmCadastroCliente.resx">
       <DependentUpon>frmCadastroCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroConfirmado.resx">
+      <DependentUpon>frmCadastroConfirmado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCadastroProduto.resx">
       <DependentUpon>frmCadastroProduto.cs</DependentUpon>

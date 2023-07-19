@@ -28,11 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.pnlTituloInicio = new System.Windows.Forms.Panel();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.btnChamaCadCliente = new System.Windows.Forms.Button();
             this.btnChamaCadProduto = new System.Windows.Forms.Button();
             this.pnlClicks = new System.Windows.Forms.Panel();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.pnlTituloInicio.SuspendLayout();
             this.pnlClicks.SuspendLayout();
             this.SuspendLayout();
@@ -41,7 +43,7 @@
             // 
             this.pnlTituloInicio.Controls.Add(this.lblTitulo);
             this.pnlTituloInicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pnlTituloInicio.Location = new System.Drawing.Point(280, 124);
+            this.pnlTituloInicio.Location = new System.Drawing.Point(240, 12);
             this.pnlTituloInicio.Name = "pnlTituloInicio";
             this.pnlTituloInicio.Size = new System.Drawing.Size(265, 100);
             this.pnlTituloInicio.TabIndex = 0;
@@ -49,7 +51,7 @@
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Location = new System.Drawing.Point(42, 33);
+            this.lblTitulo.Location = new System.Drawing.Point(40, 34);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(189, 31);
             this.lblTitulo.TabIndex = 0;
@@ -80,7 +82,7 @@
             this.pnlClicks.Controls.Add(this.btnChamaCadCliente);
             this.pnlClicks.Controls.Add(this.btnChamaCadProduto);
             this.pnlClicks.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pnlClicks.Location = new System.Drawing.Point(161, 230);
+            this.pnlClicks.Location = new System.Drawing.Point(132, 118);
             this.pnlClicks.Name = "pnlClicks";
             this.pnlClicks.Size = new System.Drawing.Size(480, 183);
             this.pnlClicks.TabIndex = 3;
@@ -108,5 +110,6 @@
         private System.Windows.Forms.Button btnChamaCadCliente;
         private System.Windows.Forms.Button btnChamaCadProduto;
         private System.Windows.Forms.Panel pnlClicks;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

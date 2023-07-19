@@ -32,6 +32,16 @@ namespace Atividade_ADO
 
             //CHAMANDO METODO INSERIR NA CLASSE DATACLIENTE
             dataCliente.Inserir(oCliente);
+
+            frmCadastroConfirmado varChamaTelaCadConfirm = new frmCadastroConfirmado();
+            varChamaTelaCadConfirm.ShowDialog();
+
+            this.Close();
+        }
+
+        private void FecharTela(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
