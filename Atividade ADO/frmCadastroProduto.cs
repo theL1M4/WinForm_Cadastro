@@ -18,7 +18,7 @@ namespace Atividade_ADO
         {
             InitializeComponent();
         }
-        private void CadastrarCliente(object sender, EventArgs e)
+        private void CadastrarProduto(object sender, EventArgs e)
         {
             oProduto.NomeProd = txtNomeProd.Text.ToLower();
             oProduto.TipoProd = txtTipoProd.Text.ToLower();
