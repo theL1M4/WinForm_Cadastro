@@ -99,7 +99,6 @@
             this.txtUnMedProd.Name = "txtUnMedProd";
             this.txtUnMedProd.Size = new System.Drawing.Size(198, 26);
             this.txtUnMedProd.TabIndex = 8;
-            this.txtUnMedProd.TextChanged += new System.EventHandler(this.txtUnMedProd_TextChanged);
             // 
             // txtTipoProd
             // 

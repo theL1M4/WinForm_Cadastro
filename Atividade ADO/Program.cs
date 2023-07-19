@@ -16,7 +16,7 @@ namespace Atividade_ADO
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmCadastroCliente());
+            Application.Run(new frmCadastroProduto());
         }
     }
 }
