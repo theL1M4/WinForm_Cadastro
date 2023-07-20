@@ -13,7 +13,7 @@ namespace Atividade_ADO
 {
     public partial class frmCadastroConfirmacao : Form
     {
-        Cliente varCliente = new Cliente();
+        Cliente oCliente = new Cliente();
         public frmCadastroConfirmacao()
         {
             InitializeComponent();
@@ -21,16 +21,16 @@ namespace Atividade_ADO
 
         private void CadastroSim(object sender, EventArgs e)
         {
-            varCliente.Nome = txtNome.Text.ToLower();
-            varCliente.Usuario = txtUsuario.Text.ToLower();
-            varCliente.Email = txtEmail.Text.ToLower();
-            varCliente.Telefone = txtTelefone.Text.ToLower();
+            oCliente.Nome = txtNome.Text.ToLower();
+            oCliente.Usuario = txtUsuario.Text.ToLower();
+            oCliente.Email = txtEmail.Text.ToLower();
+            oCliente.Telefone = txtTelefone.Text.ToLower();
 
             //INSTANCIANDO CLASSE DATACLIENTE
             DataCliente dataCliente = new DataCliente();
 
             //CHAMANDO METODO INSERIR NA CLASSE DATACLIENTE
-            dataCliente.Inserir(varCliente);
+            dataCliente.Inserir(oCliente);
 
             frmCadastroConfirmado varChamaTelaCadConfirm = new frmCadastroConfirmado();
             varChamaTelaCadConfirm.ShowDialog();
