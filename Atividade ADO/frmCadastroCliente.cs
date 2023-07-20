@@ -19,9 +19,11 @@ namespace Atividade_ADO
             InitializeComponent();
         }
 
-
         private void CadastrarCliente(object sender, EventArgs e)
         {
+            //frmCadastroConfirmacao varChamaTelaCadSN = new frmCadastroConfirmacao();
+            //varChamaTelaCadSN.ShowDialog();
+
             oCliente.Nome = txtNome.Text.ToLower();
             oCliente.Usuario = txtUsuario.Text.ToLower();
             oCliente.Email = txtEmail.Text.ToLower();
@@ -32,6 +34,16 @@ namespace Atividade_ADO
 
             //CHAMANDO METODO INSERIR NA CLASSE DATACLIENTE
             dataCliente.Inserir(oCliente);
+
+            frmCadastroConfirmado varChamaTelaCadConfirm = new frmCadastroConfirmado();
+            varChamaTelaCadConfirm.ShowDialog();
+
+            this.Close();
+        }
+
+        private void FecharTela(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

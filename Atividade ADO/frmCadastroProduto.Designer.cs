@@ -52,6 +52,18 @@
             this.lblNomeProd = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblTituloProd = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.lblInfMed = new System.Windows.Forms.Label();
+            this.lblinfMed1 = new System.Windows.Forms.Label();
+            this.lblInfMed2 = new System.Windows.Forms.Label();
+            this.lblInfMed3 = new System.Windows.Forms.Label();
+            this.lblInfMed4 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.lblInfTip4 = new System.Windows.Forms.Label();
+            this.lblInfTip3 = new System.Windows.Forms.Label();
+            this.lblInfTip2 = new System.Windows.Forms.Label();
+            this.lblInfTip1 = new System.Windows.Forms.Label();
+            this.lblInfTipo = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -295,11 +307,138 @@
             this.lblTituloProd.TabIndex = 0;
             this.lblTituloProd.Text = "Cadastro Produto";
             // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.lblInfMed4);
+            this.panel3.Controls.Add(this.lblInfMed3);
+            this.panel3.Controls.Add(this.lblInfMed2);
+            this.panel3.Controls.Add(this.lblinfMed1);
+            this.panel3.Controls.Add(this.lblInfMed);
+            this.panel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel3.Location = new System.Drawing.Point(271, 148);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(80, 112);
+            this.panel3.TabIndex = 4;
+            // 
+            // lblInfMed
+            // 
+            this.lblInfMed.AutoSize = true;
+            this.lblInfMed.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInfMed.Location = new System.Drawing.Point(13, 14);
+            this.lblInfMed.Name = "lblInfMed";
+            this.lblInfMed.Size = new System.Drawing.Size(58, 16);
+            this.lblInfMed.TabIndex = 0;
+            this.lblInfMed.Text = "*Digite:";
+            // 
+            // lblinfMed1
+            // 
+            this.lblinfMed1.AutoSize = true;
+            this.lblinfMed1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblinfMed1.Location = new System.Drawing.Point(16, 34);
+            this.lblinfMed1.Name = "lblinfMed1";
+            this.lblinfMed1.Size = new System.Drawing.Size(37, 13);
+            this.lblinfMed1.TabIndex = 1;
+            this.lblinfMed1.Text = "1 - KG";
+            // 
+            // lblInfMed2
+            // 
+            this.lblInfMed2.AutoSize = true;
+            this.lblInfMed2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInfMed2.Location = new System.Drawing.Point(16, 50);
+            this.lblInfMed2.Name = "lblInfMed2";
+            this.lblInfMed2.Size = new System.Drawing.Size(35, 13);
+            this.lblInfMed2.TabIndex = 2;
+            this.lblInfMed2.Text = "2 - LT";
+            // 
+            // lblInfMed3
+            // 
+            this.lblInfMed3.AutoSize = true;
+            this.lblInfMed3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInfMed3.Location = new System.Drawing.Point(16, 66);
+            this.lblInfMed3.Name = "lblInfMed3";
+            this.lblInfMed3.Size = new System.Drawing.Size(38, 13);
+            this.lblInfMed3.TabIndex = 3;
+            this.lblInfMed3.Text = "3 - UN";
+            // 
+            // lblInfMed4
+            // 
+            this.lblInfMed4.AutoSize = true;
+            this.lblInfMed4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInfMed4.Location = new System.Drawing.Point(16, 82);
+            this.lblInfMed4.Name = "lblInfMed4";
+            this.lblInfMed4.Size = new System.Drawing.Size(38, 13);
+            this.lblInfMed4.TabIndex = 4;
+            this.lblInfMed4.Text = "4 - MT";
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.lblInfTip4);
+            this.panel4.Controls.Add(this.lblInfTip3);
+            this.panel4.Controls.Add(this.lblInfTip2);
+            this.panel4.Controls.Add(this.lblInfTip1);
+            this.panel4.Controls.Add(this.lblInfTipo);
+            this.panel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel4.Location = new System.Drawing.Point(16, 148);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(104, 122);
+            this.panel4.TabIndex = 5;
+            // 
+            // lblInfTip4
+            // 
+            this.lblInfTip4.AutoSize = true;
+            this.lblInfTip4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInfTip4.Location = new System.Drawing.Point(16, 82);
+            this.lblInfTip4.Name = "lblInfTip4";
+            this.lblInfTip4.Size = new System.Drawing.Size(65, 13);
+            this.lblInfTip4.TabIndex = 4;
+            this.lblInfTip4.Text = "4 - Escritório";
+            // 
+            // lblInfTip3
+            // 
+            this.lblInfTip3.AutoSize = true;
+            this.lblInfTip3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInfTip3.Location = new System.Drawing.Point(16, 66);
+            this.lblInfTip3.Name = "lblInfTip3";
+            this.lblInfTip3.Size = new System.Drawing.Size(61, 13);
+            this.lblInfTip3.TabIndex = 3;
+            this.lblInfTip3.Text = "3 - Limpeza";
+            // 
+            // lblInfTip2
+            // 
+            this.lblInfTip2.AutoSize = true;
+            this.lblInfTip2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInfTip2.Location = new System.Drawing.Point(16, 50);
+            this.lblInfTip2.Name = "lblInfTip2";
+            this.lblInfTip2.Size = new System.Drawing.Size(60, 13);
+            this.lblInfTip2.TabIndex = 2;
+            this.lblInfTip2.Text = "2 - Bebidas";
+            // 
+            // lblInfTip1
+            // 
+            this.lblInfTip1.AutoSize = true;
+            this.lblInfTip1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInfTip1.Location = new System.Drawing.Point(16, 34);
+            this.lblInfTip1.Name = "lblInfTip1";
+            this.lblInfTip1.Size = new System.Drawing.Size(67, 13);
+            this.lblInfTip1.TabIndex = 1;
+            this.lblInfTip1.Text = "1 - Alimentos";
+            // 
+            // lblInfTipo
+            // 
+            this.lblInfTipo.AutoSize = true;
+            this.lblInfTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInfTipo.Location = new System.Drawing.Point(13, 14);
+            this.lblInfTipo.Name = "lblInfTipo";
+            this.lblInfTipo.Size = new System.Drawing.Size(58, 16);
+            this.lblInfTipo.TabIndex = 0;
+            this.lblInfTipo.Text = "*Digite:";
+            // 
             // frmCadastroProduto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnCadastrarProd);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -343,5 +482,6 @@
         private System.Windows.Forms.Label lblInfTip2;
         private System.Windows.Forms.Label lblInfTip1;
         private System.Windows.Forms.Label lblInfTipo;
+        private System.Windows.Forms.Button button1;
     }
 }

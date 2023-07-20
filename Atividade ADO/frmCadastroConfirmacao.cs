@@ -11,33 +11,35 @@ using System.Windows.Forms;
 
 namespace Atividade_ADO
 {
-    public partial class frmCadastroProduto : Form
+    public partial class frmCadastroConfirmacao : Form
     {
-        Produto oProduto = new Produto();
-        public frmCadastroProduto()
+        Cliente oCliente = new Cliente();
+        public frmCadastroConfirmacao()
         {
             InitializeComponent();
         }
-        private void CadastrarProduto(object sender, EventArgs e)
+
+        private void CadastroSim(object sender, EventArgs e)
         {
-            oProduto.NomeProd = txtNomeProd.Text.ToLower();
-            oProduto.TipoProd = txtTipoProd.Text.ToLower();
-            oProduto.UnMedidaProd = txtUnMedProd.Text.ToLower();
-            oProduto.QuantidadeProd = txtQtdProd.Text.ToLower();
+            oCliente.Nome = txtNome.Text.ToLower();
+            oCliente.Usuario = txtUsuario.Text.ToLower();
+            oCliente.Email = txtEmail.Text.ToLower();
+            oCliente.Telefone = txtTelefone.Text.ToLower();
 
             //INSTANCIANDO CLASSE DATACLIENTE
-            DataProduto dataProduto = new DataProduto();
+            DataCliente dataCliente = new DataCliente();
 
             //CHAMANDO METODO INSERIR NA CLASSE DATACLIENTE
-            dataProduto.Inserir(oProduto);
+            dataCliente.Inserir(oCliente);
 
             frmCadastroConfirmado varChamaTelaCadConfirm = new frmCadastroConfirmado();
             varChamaTelaCadConfirm.ShowDialog();
 
             this.Close();
+
         }
 
-        private void FecharTela(object sender, EventArgs e)
+        public void CadastroNao(object sender, EventArgs e)
         {
             this.Close();
         }
