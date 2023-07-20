@@ -22,6 +22,9 @@ namespace Atividade_ADO
 
         private void CadastrarCliente(object sender, EventArgs e)
         {
+            frmCadastroConfirmacao varChamaTelaCadSN = new frmCadastroConfirmacao();
+            varChamaTelaCadSN.ShowDialog();
+            
             oCliente.Nome = txtNome.Text.ToLower();
             oCliente.Usuario = txtUsuario.Text.ToLower();
             oCliente.Email = txtEmail.Text.ToLower();
