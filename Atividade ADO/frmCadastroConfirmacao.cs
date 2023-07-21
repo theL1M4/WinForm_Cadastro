@@ -14,15 +14,15 @@ namespace Atividade_ADO
     public partial class frmCadastroConfirmacao : Form
     {
         Cliente oCliente = new Cliente();
-        frmCadastroCliente oCadastroCliente = new frmCadastroCliente();
+        //frmCadastroCliente oCadastroCliente = new frmCadastroCliente();
         public frmCadastroConfirmacao()
         {
             InitializeComponent();
         }
 
-        private void CadastroSim(object sender, EventArgs e)
+        public void CadastroSim(object sender, EventArgs e)
         {
-            oCliente.Nome = oCadastroCliente.txtNome.Text.ToLower();
+            oCliente.Nome = frmCadastroCliente.txtNome.Text.ToLower();
             oCliente.Usuario = oCadastroCliente.txtUsuario.Text.ToLower();
             oCliente.Email = oCadastroCliente.txtEmail.Text.ToLower();
             oCliente.Telefone = oCadastroCliente.txtTelefone.Text.ToLower();
