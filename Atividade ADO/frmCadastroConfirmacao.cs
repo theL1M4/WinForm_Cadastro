@@ -14,6 +14,7 @@ namespace Atividade_ADO
     public partial class frmCadastroConfirmacao : Form
     {
         Cliente oCliente = new Cliente();
+        frmCadastroCliente oCadastroCliente = new frmCadastroCliente();
         public frmCadastroConfirmacao()
         {
             InitializeComponent();
@@ -21,10 +22,10 @@ namespace Atividade_ADO
 
         private void CadastroSim(object sender, EventArgs e)
         {
-            oCliente.Nome = txtNome.Text.ToLower();
-            oCliente.Usuario = txtUsuario.Text.ToLower();
-            oCliente.Email = txtEmail.Text.ToLower();
-            oCliente.Telefone = txtTelefone.Text.ToLower();
+            oCliente.Nome = oCadastroCliente.txtNome.Text.ToLower();
+            oCliente.Usuario = oCadastroCliente.txtUsuario.Text.ToLower();
+            oCliente.Email = oCadastroCliente.txtEmail.Text.ToLower();
+            oCliente.Telefone = oCadastroCliente.txtTelefone.Text.ToLower();
 
             //INSTANCIANDO CLASSE DATACLIENTE
             DataCliente dataCliente = new DataCliente();

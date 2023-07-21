@@ -19,7 +19,7 @@ namespace Atividade_ADO
             InitializeComponent();
         }
 
-        private void CadastrarCliente(object sender, EventArgs e)
+        public void CadastrarCliente(object sender, EventArgs e)
         {
             //frmCadastroConfirmacao varChamaTelaCadSN = new frmCadastroConfirmacao();
             //varChamaTelaCadSN.ShowDialog();
