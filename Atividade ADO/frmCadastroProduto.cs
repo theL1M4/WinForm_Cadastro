@@ -20,21 +20,30 @@ namespace Atividade_ADO
         }
         private void CadastrarProduto(object sender, EventArgs e)
         {
-            oProduto.NomeProd = txtNomeProd.Text.ToLower();
-            oProduto.TipoProd = txtTipoProd.Text.ToLower();
-            oProduto.UnMedidaProd = txtUnMedProd.Text.ToLower();
-            oProduto.QuantidadeProd = txtQtdProd.Text.ToLower();
+            frmCadastroConfirmacao varChamaTelaCadSN = new frmCadastroConfirmacao();
+            varChamaTelaCadSN.ShowDialog();
+            if(varChamaTelaCadSN.CadSim == 1)
+            {
+                oProduto.NomeProd = txtNomeProd.Text.ToLower();
+                oProduto.TipoProd = txtTipoProd.Text.ToLower();
+                oProduto.UnMedidaProd = txtUnMedProd.Text.ToLower();
+                oProduto.QuantidadeProd = txtQtdProd.Text.ToLower();
 
-            //INSTANCIANDO CLASSE DATACLIENTE
-            DataProduto dataProduto = new DataProduto();
+                //INSTANCIANDO CLASSE DATACLIENTE
+                DataProduto dataProduto = new DataProduto();
 
-            //CHAMANDO METODO INSERIR NA CLASSE DATACLIENTE
-            dataProduto.Inserir(oProduto);
+                //CHAMANDO METODO INSERIR NA CLASSE DATACLIENTE
+                dataProduto.Inserir(oProduto);
 
-            frmCadastroConfirmado varChamaTelaCadConfirm = new frmCadastroConfirmado();
-            varChamaTelaCadConfirm.ShowDialog();
+                frmCadastroConfirmado varChamaTelaCadConfirm = new frmCadastroConfirmado();
+                varChamaTelaCadConfirm.ShowDialog();
 
-            this.Close();
+                this.Close();
+            }
+            else if(varChamaTelaCadSN.CadSim == 1)
+            {
+                this.Close();
+            }
         }
 
         private void FecharTela(object sender, EventArgs e)

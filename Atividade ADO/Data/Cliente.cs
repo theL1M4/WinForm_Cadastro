@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Atividade_ADO.Data
 {
-    internal class Cliente
+    class Cliente
     {
         public int Id { get; set; }
         public string Nome{ get; set; }

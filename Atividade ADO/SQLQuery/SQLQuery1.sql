@@ -35,9 +35,9 @@ QuantidadeProd NVARCHAR(5) NOT NULL)
 GO
 
 DECLARE @NomeProd AS NVARCHAR(200)='TESTE1'
-DECLARE @TipoProd AS NVARCHAR(50)='TESTE1'
-DECLARE @UnMedidaProd AS NVARCHAR(20)='(11)1234-5678'
-DECLARE @QuantidadeProd AS NVARCHAR(200)='TESTE@TESTE.COM'
+DECLARE @TipoProd AS NVARCHAR(50)='1'
+DECLARE @UnMedidaProd AS NVARCHAR(20)='1'
+DECLARE @QuantidadeProd AS NVARCHAR(200)='1'
 INSERT INTO PRODUTOS(NomeProd,TipoProd,UnMedidaProd,QuantidadeProd)
 VALUES(@NomeProd,@TipoProd,@UnMedidaProd,@QuantidadeProd)
 go

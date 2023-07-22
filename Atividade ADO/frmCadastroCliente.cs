@@ -21,24 +21,30 @@ namespace Atividade_ADO
 
         public void CadastrarCliente(object sender, EventArgs e)
         {
-            //frmCadastroConfirmacao varChamaTelaCadSN = new frmCadastroConfirmacao();
-            //varChamaTelaCadSN.ShowDialog();
+            frmCadastroConfirmacao varChamaTelaCadSN = new frmCadastroConfirmacao();
+            varChamaTelaCadSN.ShowDialog();
+            if (varChamaTelaCadSN.CadSim == 1)
+            {
+                oCliente.Nome = txtNome.Text.ToLower();
+                oCliente.Usuario = txtUsuario.Text.ToLower();
+                oCliente.Email = txtEmail.Text.ToLower();
+                oCliente.Telefone = txtTelefone.Text.ToLower();
 
-            oCliente.Nome = txtNome.Text.ToLower();
-            oCliente.Usuario = txtUsuario.Text.ToLower();
-            oCliente.Email = txtEmail.Text.ToLower();
-            oCliente.Telefone = txtTelefone.Text.ToLower();
+                //INSTANCIANDO CLASSE DATACLIENTE
+                DataCliente dataCliente = new DataCliente();
 
-            //INSTANCIANDO CLASSE DATACLIENTE
-            DataCliente dataCliente = new DataCliente();
+                //CHAMANDO METODO INSERIR NA CLASSE DATACLIENTE
+                dataCliente.Inserir(oCliente);
 
-            //CHAMANDO METODO INSERIR NA CLASSE DATACLIENTE
-            dataCliente.Inserir(oCliente);
+                frmCadastroConfirmado varChamaTelaCadConfirm = new frmCadastroConfirmado();
+                varChamaTelaCadConfirm.ShowDialog();
 
-            frmCadastroConfirmado varChamaTelaCadConfirm = new frmCadastroConfirmado();
-            varChamaTelaCadConfirm.ShowDialog();
-
-            this.Close();
+                this.Close();
+            }
+            else if (varChamaTelaCadSN.CadNao == 1)
+            {
+                this.Close();
+            }
         }
 
         private void FecharTela(object sender, EventArgs e)
