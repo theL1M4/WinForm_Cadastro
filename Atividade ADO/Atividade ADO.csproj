@@ -81,12 +81,6 @@
     <Compile Include="frmTelaInicio.Designer.cs">
       <DependentUpon>frmTelaInicio.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmTestes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmTestes.Designer.cs">
-      <DependentUpon>frmTestes.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmCadastroCliente.resx">
@@ -103,9 +97,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmTelaInicio.resx">
       <DependentUpon>frmTelaInicio.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmTestes.resx">
-      <DependentUpon>frmTestes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
