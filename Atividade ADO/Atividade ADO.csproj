@@ -51,6 +51,12 @@
     <Compile Include="Data\DataCliente.cs" />
     <Compile Include="Data\DataProduto.cs" />
     <Compile Include="Data\Produto.cs" />
+    <Compile Include="frmBuscaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscaCliente.Designer.cs">
+      <DependentUpon>frmBuscaCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCadastroCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +89,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmBuscaCliente.resx">
+      <DependentUpon>frmBuscaCliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCadastroCliente.resx">
       <DependentUpon>frmCadastroCliente.cs</DependentUpon>
     </EmbeddedResource>
