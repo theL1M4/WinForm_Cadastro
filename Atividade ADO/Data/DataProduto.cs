@@ -28,7 +28,7 @@ namespace Atividade_ADO.Data
             sqlCMD.Parameters.AddWithValue("@UnMedidaProd", produto.UnMedidaProd);
             sqlCMD.Parameters.AddWithValue("@QuantidadeProd", produto.QuantidadeProd);
             //COMANDO PARA VERIFICAR SE O USUARIO EXISTE
-            string strCMD = "SELECT 1 FROM PRODUTOS WHERE NomaProd = @NomeProd";
+            string strCMD = "SELECT 1 FROM PRODUTOS WHERE NomeProd = @NomeProd";
             sqlCMD.CommandText = strCMD;
             //DATAREADER RECEBE O COMANDO SQLCMD.EXECUTEREADER
             IDataReader dtreader = sqlCMD.ExecuteReader();
