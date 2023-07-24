@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Atividade_ADO.Data
 {
-    internal class DataProduto
+    class DataProduto
     {
         readonly ConectaBD oConectaBD = new ConectaBD();
         readonly SqlCommand sqlCMD = new SqlCommand();
