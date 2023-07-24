@@ -13,7 +13,7 @@ namespace Atividade_ADO.Data
         readonly ConectaBD oConectaBD = new ConectaBD();
         readonly SqlCommand sqlCMD = new SqlCommand();
 
-        public void Inserir(Produto produto)
+        public int Inserir(Produto produto)
 
         {
 
