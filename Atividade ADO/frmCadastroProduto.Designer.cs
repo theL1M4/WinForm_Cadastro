@@ -217,6 +217,7 @@
             // txtQtdProd
             // 
             this.txtQtdProd.Location = new System.Drawing.Point(551, 116);
+            this.txtQtdProd.MaxLength = 5;
             this.txtQtdProd.Name = "txtQtdProd";
             this.txtQtdProd.Size = new System.Drawing.Size(203, 26);
             this.txtQtdProd.TabIndex = 9;
@@ -224,6 +225,7 @@
             // txtUnMedProd
             // 
             this.txtUnMedProd.Location = new System.Drawing.Point(271, 116);
+            this.txtUnMedProd.MaxLength = 1;
             this.txtUnMedProd.Name = "txtUnMedProd";
             this.txtUnMedProd.Size = new System.Drawing.Size(198, 26);
             this.txtUnMedProd.TabIndex = 8;
@@ -231,6 +233,7 @@
             // txtTipoProd
             // 
             this.txtTipoProd.Location = new System.Drawing.Point(16, 116);
+            this.txtTipoProd.MaxLength = 1;
             this.txtTipoProd.Name = "txtTipoProd";
             this.txtTipoProd.Size = new System.Drawing.Size(195, 26);
             this.txtTipoProd.TabIndex = 5;
