@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Dapper;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -67,6 +68,24 @@ namespace Atividade_ADO.Data
             conn = null;
 
             return oRetorno;
+
+        }
+        public List<Cliente> BuscarCliente(Cliente cliente)
+        {
+            try
+            {
+                ConectaBD oConectaBD = new ConectaBD();
+                var conn = oConectaBD.SqlConn();
+                conn.Open();
+                string strCMD = "SELECT * FROM CLIENTE WHERE Nome like '%" + cliente.Nome.ToString() + "%'";
+                //USANDO DAPPER
+                var clientes = conn.Query<Cliente>(strCMD).ToList();
+                return clientes;
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
         }
     }
 }

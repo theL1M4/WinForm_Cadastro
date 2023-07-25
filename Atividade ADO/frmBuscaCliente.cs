@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Atividade_ADO.Data;
+using Dapper;
 
 namespace Atividade_ADO
 {
@@ -15,6 +17,19 @@ namespace Atividade_ADO
         public frmBuscaCliente()
         {
             InitializeComponent();
+        }
+
+        private void BuscaCliente(object sender, EventArgs e)
+        {
+
+            Cliente oCliente = new Cliente();
+            oCliente.Nome = txtNome.Text == "" ? "" : txtNome.Text;
+
+            DataCliente oDataCliente = new DataCliente();
+
+            var clientes = oDataCliente.BuscarCliente(oCliente);
+
+            dtgClientes.DataSource = clientes;
         }
     }
 }
