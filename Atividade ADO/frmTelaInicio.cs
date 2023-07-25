@@ -28,5 +28,11 @@ namespace Atividade_ADO
             frmCadastroCliente varChamaTelaCadCliente = new frmCadastroCliente();
             varChamaTelaCadCliente.ShowDialog();
         }
+
+        private void BuscarClienteInicio(object sender, EventArgs e)
+        {
+            frmBuscaCliente varChamaTelaBusCliente = new frmBuscaCliente();
+            varChamaTelaBusCliente.ShowDialog();
+        }
     }
 }
