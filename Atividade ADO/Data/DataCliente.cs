@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using Dapper;
 
 namespace Atividade_ADO.Data
 {
@@ -77,7 +78,7 @@ namespace Atividade_ADO.Data
                 ConectaBD oConectaBD = new ConectaBD();
                 var conn = oConectaBD.SqlConn();
                 conn.Open();
-                string strCMD = "SELECT * FROM CLIENTE WHERE Nome like '%" + cliente.Nome.ToString() + "%'";
+                string strCMD = "SELECT * FROM CLIENTES WHERE Nome like '%" + cliente.Nome.ToString() + "%'";
                 //USANDO DAPPER
                 var clientes = conn.Query<Cliente>(strCMD).ToList();
                 return clientes;
