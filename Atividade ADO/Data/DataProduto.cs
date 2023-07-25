@@ -11,7 +11,7 @@ namespace Atividade_ADO.Data
     class DataProduto
     {
         readonly ConectaBD oConectaBD = new ConectaBD();
-        readonly SqlCommand sqlCMD = new SqlCommand();
+        readonly SqlCommand sqlCMD = new SqlCommand();        
 
         public int Inserir(Produto produto)
 
