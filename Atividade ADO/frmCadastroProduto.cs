@@ -14,7 +14,7 @@ namespace Atividade_ADO
     public partial class frmCadastroProduto : Form
     {
         Produto oProduto = new Produto();
-        public int oRetorno = 0;
+        public int oRetorno;
         public frmCadastroProduto()
         {
             InitializeComponent();
