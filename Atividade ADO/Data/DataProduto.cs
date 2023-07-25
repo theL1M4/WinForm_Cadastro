@@ -77,7 +77,7 @@ namespace Atividade_ADO.Data
                 ConectaBD oConectaBD = new ConectaBD();
                 var conn = oConectaBD.SqlConn();
                 conn.Open();
-                string strCMD = "SELECT * FROM PRODUTOS WHERE Nome like '%" + produto.NomeProd.ToString() + "%'";
+                string strCMD = "SELECT * FROM PRODUTOS WHERE NomeProd like '%" + produto.NomeProd.ToString() + "%'";
                 //USANDO DAPPER
                 var produtos = conn.Query<Produto>(strCMD).ToList();
                 return produtos;

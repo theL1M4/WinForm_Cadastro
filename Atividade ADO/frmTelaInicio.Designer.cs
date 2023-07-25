@@ -34,8 +34,9 @@
             this.btnChamaCadCliente = new System.Windows.Forms.Button();
             this.btnChamaCadProduto = new System.Windows.Forms.Button();
             this.pnlClicks = new System.Windows.Forms.Panel();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.button1 = new System.Windows.Forms.Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.button2 = new System.Windows.Forms.Button();
             this.pnlTituloInicio.SuspendLayout();
             this.pnlClicks.SuspendLayout();
             this.SuspendLayout();
@@ -80,6 +81,7 @@
             // 
             // pnlClicks
             // 
+            this.pnlClicks.Controls.Add(this.button2);
             this.pnlClicks.Controls.Add(this.button1);
             this.pnlClicks.Controls.Add(this.btnChamaCadCliente);
             this.pnlClicks.Controls.Add(this.btnChamaCadProduto);
@@ -91,13 +93,23 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(198, 36);
+            this.button1.Location = new System.Drawing.Point(119, 36);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(110, 110);
             this.button1.TabIndex = 3;
             this.button1.Text = "Busca de Cliente";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.BuscarClienteInicio);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(251, 36);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(110, 110);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "Busca de Produto";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.BuscarProdutoInicio);
             // 
             // frmTelaInicio
             // 
@@ -124,5 +136,6 @@
         private System.Windows.Forms.Panel pnlClicks;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

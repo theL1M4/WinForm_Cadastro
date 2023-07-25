@@ -34,5 +34,11 @@ namespace Atividade_ADO
             frmBuscaCliente varChamaTelaBusCliente = new frmBuscaCliente();
             varChamaTelaBusCliente.ShowDialog();
         }
+
+        private void BuscarProdutoInicio(object sender, EventArgs e)
+        {
+            frmBuscaProduto varChamaTelaBusProd = new frmBuscaProduto();
+            varChamaTelaBusProd.ShowDialog();
+        }
     }
 }
