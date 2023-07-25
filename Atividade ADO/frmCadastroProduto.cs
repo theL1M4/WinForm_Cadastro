@@ -14,11 +14,12 @@ namespace Atividade_ADO
     public partial class frmCadastroProduto : Form
     {
         Produto oProduto = new Produto();
+        public int oRetorno = 0;
         public frmCadastroProduto()
         {
             InitializeComponent();
         }
-        private void CadastrarProduto(object sender, EventArgs e)
+        public void CadastrarProduto(object sender, EventArgs e)
         {
             frmCadastroConfirmacao varChamaTelaCadSN = new frmCadastroConfirmacao();
             varChamaTelaCadSN.ShowDialog();
@@ -34,6 +35,11 @@ namespace Atividade_ADO
 
                 //CHAMANDO METODO INSERIR NA CLASSE DATACLIENTE
                 dataProduto.Inserir(oProduto);
+                if (oRetorno == 1)
+                {
+                    MessageBox.Show("Produto já cadastrado");
+                    txtNomeProd.Focus();
+                }
 
                 frmCadastroConfirmado varChamaTelaCadConfirm = new frmCadastroConfirmado();
                 varChamaTelaCadConfirm.ShowDialog();
