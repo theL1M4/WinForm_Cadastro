@@ -60,6 +60,12 @@
     <Compile Include="frmBuscaCliente.Designer.cs">
       <DependentUpon>frmBuscaCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmBuscaProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscaProduto.Designer.cs">
+      <DependentUpon>frmBuscaProduto.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCadastroCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +106,9 @@
     </Compile>
     <EmbeddedResource Include="frmBuscaCliente.resx">
       <DependentUpon>frmBuscaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscaProduto.resx">
+      <DependentUpon>frmBuscaProduto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCadastroCliente.resx">
       <DependentUpon>frmCadastroCliente.cs</DependentUpon>
