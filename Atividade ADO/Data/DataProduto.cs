@@ -5,19 +5,20 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Atividade_ADO.Data
 {
-    class DataProduto
+     class DataProduto
     {
         readonly ConectaBD oConectaBD = new ConectaBD();
         readonly SqlCommand sqlCMD = new SqlCommand();
+        frmCadastroProduto oCadastroProduto = new frmCadastroProduto();
+        public int oRetorno = 0;
 
         public int Inserir(Produto produto)
 
         {
-
-            var oRetorno = 0;
             //sqlConn.AbreBanco();
             var conn = oConectaBD.SqlConn();
             conn.Open();
