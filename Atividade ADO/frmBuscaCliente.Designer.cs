@@ -110,9 +110,10 @@
             // dtgClientes
             // 
             this.dtgClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgClientes.Location = new System.Drawing.Point(280, 15);
+            this.dtgClientes.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtgClientes.Location = new System.Drawing.Point(0, 0);
             this.dtgClientes.Name = "dtgClientes";
-            this.dtgClientes.Size = new System.Drawing.Size(240, 150);
+            this.dtgClientes.Size = new System.Drawing.Size(796, 277);
             this.dtgClientes.TabIndex = 0;
             // 
             // frmBuscaCliente
