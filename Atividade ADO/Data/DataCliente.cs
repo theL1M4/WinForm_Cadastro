@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace Atividade_ADO.Data
@@ -45,6 +46,8 @@ namespace Atividade_ADO.Data
                 ///CODIGO PARA INFORMAR QUE O USUARIO JÁ EXISTE...
                 ///sqlCMD.ExecuteNonQuery();
                 oRetorno = 1;
+                MessageBox.Show("Usuário já existente");
+
             }
             else if (cliente.Id != 0) //se existir o id ele executa o update
             {
@@ -52,6 +55,7 @@ namespace Atividade_ADO.Data
                 //LOGICA PARA ALTERAR CLIENTE PERMITINDO ALTERAÇÃO DO USUARIO
                 sqlCMD.ExecuteNonQuery();
                 oRetorno = 2;
+                MessageBox.Show("Usuário atualizado");
             }
             else //se não existir o id ele executa o insert
             {
@@ -61,6 +65,7 @@ namespace Atividade_ADO.Data
                 sqlCMD.CommandText = strCMD;
                 sqlCMD.ExecuteNonQuery();
                 oRetorno = 3;
+                //MessageBox.Show("Usuário cadastrado");
             }
 
             conn.Close();

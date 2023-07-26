@@ -30,6 +30,10 @@ namespace Atividade_ADO
             var clientes = oDataCliente.BuscarCliente(oCliente);
 
             dtgClientes.DataSource = clientes;
+
+            Utils utils = new Utils();
+            utils.FormataGrid(dtgClientes, 1);
+
         }
     }
 }

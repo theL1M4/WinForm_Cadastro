@@ -54,6 +54,7 @@
     <Compile Include="Data\DataCliente.cs" />
     <Compile Include="Data\DataProduto.cs" />
     <Compile Include="Data\Produto.cs" />
+    <Compile Include="Data\Utils.cs" />
     <Compile Include="frmBuscaCliente.cs">
       <SubType>Form</SubType>
     </Compile>

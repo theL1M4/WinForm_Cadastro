@@ -29,6 +29,10 @@ namespace Atividade_ADO
             var produto = oDataProduto.BuscarProduto(oProduto);
 
             dtgProduto.DataSource = produto;
+
+            Utils utils = new Utils();
+            utils.FormataGrid(dtgProduto, 2);
+
         }
 
     }
