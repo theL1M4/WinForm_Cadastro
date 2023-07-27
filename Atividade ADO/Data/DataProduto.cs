@@ -15,7 +15,7 @@ namespace Atividade_ADO.Data
         readonly ConectaBD oConectaBD = new ConectaBD();
         readonly SqlCommand sqlCMD = new SqlCommand();
         frmCadastroProduto oCadastroProduto = new frmCadastroProduto();
-        public int oRetorno = 0;
+        public int oRetornoProd = 0;
 
         public int Inserir(Produto produto)
 
@@ -46,14 +46,14 @@ namespace Atividade_ADO.Data
             {
                 ///CODIGO PARA INFORMAR QUE O USUARIO JÁ EXISTE...
                 ///sqlCMD.ExecuteNonQuery();
-                oRetorno = 1;
+                oRetornoProd = 1;
             }
             else if (produto.IdProd != 0) //se existir o id ele executa o update
             {
                 //LOGICA PARA ALTERAR CLIENTE NÃO PERMITINDO ALTERAÇÃO DO USUARIO
                 //LOGICA PARA ALTERAR CLIENTE PERMITINDO ALTERAÇÃO DO USUARIO
                 sqlCMD.ExecuteNonQuery();
-                oRetorno = 2;
+                oRetornoProd = 2;
             }
             else //se não existir o id ele executa o insert
             {
@@ -61,14 +61,14 @@ namespace Atividade_ADO.Data
 
                 sqlCMD.CommandText = strCMD;
                 sqlCMD.ExecuteNonQuery();
-                oRetorno = 3;
+                oRetornoProd = 3;
             }
 
             conn.Close();
             conn.Dispose();
             conn = null;
 
-            return oRetorno;
+            return oRetornoProd;
         }
         public List<Produto> BuscarProduto(Produto produto)
         {
