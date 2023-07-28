@@ -6,7 +6,7 @@ namespace Atividade_ADO
 {
     public partial class frmCadastroConfirmacao : Form
     {
-        public int CadSim, CadNao;
+        public int CadSim;
         public frmCadastroConfirmacao()
         {
             InitializeComponent();
@@ -20,7 +20,6 @@ namespace Atividade_ADO
 
         public void CadastroNao(object sender, EventArgs e)
         {
-            CadNao = 1;
             this.Close();
         }
     }

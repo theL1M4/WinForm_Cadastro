@@ -41,10 +41,6 @@ namespace Atividade_ADO
 
                 this.Close();
             }
-            else if (varChamaTelaCadSN.CadNao == 1)
-            {
-                this.Close();
-            }
         }
 
         private void FecharTela(object sender, EventArgs e)

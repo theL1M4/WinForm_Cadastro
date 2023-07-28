@@ -15,7 +15,7 @@ namespace Atividade_ADO.Data
         readonly ConectaBD oConectaBD = new ConectaBD();
         readonly SqlCommand sqlCMD = new SqlCommand();
         frmCadastroProduto oCadastroProduto = new frmCadastroProduto();
-        public int oRetornoProd = 0;
+        public int oRetornoProd;
 
         public int Inserir(Produto produto)
 
@@ -46,12 +46,14 @@ namespace Atividade_ADO.Data
             {
                 ///CODIGO PARA INFORMAR QUE O USUARIO JÁ EXISTE...
                 ///sqlCMD.ExecuteNonQuery();
+                MessageBox.Show("Usuário já existente!\nCrie um novo");
                 oRetornoProd = 1;
             }
             else if (produto.IdProd != 0) //se existir o id ele executa o update
             {
                 //LOGICA PARA ALTERAR CLIENTE NÃO PERMITINDO ALTERAÇÃO DO USUARIO
                 //LOGICA PARA ALTERAR CLIENTE PERMITINDO ALTERAÇÃO DO USUARIO
+                strCMD = "INSERT INTO PRODUTOS(NomeProd,TipoProd,UnMedidaProd,QuantidadeProd) VALUES(@NomeProd, @TipoProd, @UnMedidaProd, @QuantidadeProd)";
                 sqlCMD.ExecuteNonQuery();
                 oRetornoProd = 2;
             }

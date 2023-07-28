@@ -14,6 +14,9 @@ namespace Atividade_ADO
     public partial class frmCadastroProduto : Form
     {
         Produto oProduto = new Produto();
+        DataProduto oDataProduto = new DataProduto();
+        frmCadastroConfirmado varChamaTelaCadConfirm = new frmCadastroConfirmado();
+
         public frmCadastroProduto()
         {
             InitializeComponent();
@@ -35,16 +38,19 @@ namespace Atividade_ADO
                 //CHAMANDO METODO INSERIR NA CLASSE DATACLIENTE
                 dataProduto.Inserir(oProduto);
 
-                if()
+                if (oDataProduto.oRetornoProd == 3)
+                {
+                    varChamaTelaCadConfirm.ShowDialog();
+                    this.Close();
+                }
+                else if (oDataProduto.oRetornoProd == 2)
+                {
 
-                frmCadastroConfirmado varChamaTelaCadConfirm = new frmCadastroConfirmado();
-                varChamaTelaCadConfirm.ShowDialog();
-
-                this.Close();
-            }
-            else if(varChamaTelaCadSN.CadSim == 1)
-            {
-                this.Close();
+                }
+                else if (oDataProduto.oRetornoProd == 1)
+                {
+                    txtNomeProd.Focus();
+                }
             }
         }
 
