@@ -14,7 +14,7 @@ namespace Atividade_ADO.Data
     {
         readonly ConectaBD oConectaBD = new ConectaBD();
         readonly SqlCommand sqlCMD = new SqlCommand();
-        frmCadastroProduto oCadastroProduto = new frmCadastroProduto();
+        //frmCadastroProduto oCadastroProduto = new frmCadastroProduto();
         public int oRetornoProd;
 
         public int Inserir(Produto produto)
