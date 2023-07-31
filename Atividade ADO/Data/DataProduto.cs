@@ -53,8 +53,8 @@ namespace Atividade_ADO.Data
             {
                 //LOGICA PARA ALTERAR CLIENTE NÃO PERMITINDO ALTERAÇÃO DO USUARIO
                 //LOGICA PARA ALTERAR CLIENTE PERMITINDO ALTERAÇÃO DO USUARIO
-                strCMD = "INSERT INTO PRODUTOS(NomeProd,TipoProd,UnMedidaProd,QuantidadeProd) VALUES(@NomeProd, @TipoProd, @UnMedidaProd, @QuantidadeProd)";
-                sqlCMD.ExecuteNonQuery();
+                //strCMD = "INSERT INTO PRODUTOS(NomeProd,TipoProd,UnMedidaProd,QuantidadeProd) VALUES(@NomeProd, @TipoProd, @UnMedidaProd, @QuantidadeProd)";
+                //sqlCMD.ExecuteNonQuery();
                 oRetornoProd = 2;
             }
             else //se não existir o id ele executa o insert
