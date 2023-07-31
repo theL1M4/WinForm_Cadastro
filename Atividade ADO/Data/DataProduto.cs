@@ -84,7 +84,7 @@ namespace Atividade_ADO.Data
                 var produtos = conn.Query<Produto>(strCMD).ToList();
                 return produtos;
             }
-            catch (Exception ex)
+            catch (Exception ex) 
             {
                 throw;
             }
