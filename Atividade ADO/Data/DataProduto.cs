@@ -46,7 +46,7 @@ namespace Atividade_ADO.Data
             {
                 ///CODIGO PARA INFORMAR QUE O USUARIO JÁ EXISTE...
                 ///sqlCMD.ExecuteNonQuery();
-                MessageBox.Show("Usuário já existente!\nCrie um novo");
+                MessageBox.Show("Produto já existente!\nCadastre um novo");
                 oRetornoProd = 1;
             }
             else if (produto.IdProd != 0) //se existir o id ele executa o update
@@ -88,6 +88,24 @@ namespace Atividade_ADO.Data
             {
                 throw;
             }
+        }
+
+        public bool Excluir(string idProd)
+        {
+            bool oRetorno;
+            try
+            {
+                ConectaBD oConectaBD = new ConectaBD();
+                var conn = oConectaBD.SqlConn();
+                conn.Open();
+                string strCMD = "DELETE PRODUTOS WHERE IdProd = " + idProd;
+                oRetorno = conn.Execute(strCMD).ToString() == "1" ? true : false;
+            }
+            catch
+            {
+                oRetorno = false;
+            }
+            return oRetorno;
         }
     }
 }

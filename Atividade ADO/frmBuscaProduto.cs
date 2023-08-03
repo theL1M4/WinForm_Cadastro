@@ -22,7 +22,7 @@ namespace Atividade_ADO
         {
 
             Produto oProduto = new Produto();
-            oProduto.NomeProd = txtNomeProduto.Text == "" ? "" : txtNomeProduto.Text;
+            oProduto.NomeProd = txtNomeProd.Text == "" ? "" : txtNomeProd.Text;
 
             DataProduto oDataProduto = new DataProduto();
 
@@ -35,5 +35,21 @@ namespace Atividade_ADO
 
         }
 
+        private void ExcluirProduto(object sender, EventArgs e)
+        {
+            var produto = dtgProduto.CurrentRow.Cells[1].Value.ToString();
+            var idProd = dtgProduto.CurrentRow.Cells[0].Value.ToString();
+            var resp = MessageBox.Show(txtNomeProd, "Deseja mesmo excluir o produto " + produto + "?", "Atenção!", MessageBoxButtons.YesNo);
+
+            if (resp == DialogResult.Yes)
+            {
+                DataProduto oDataProduto = new DataProduto();
+
+                if (oDataProduto.Excluir(idProd))
+                    MessageBox.Show(txtNomeProd, "O produto " + produto + " foi excluido corretamente!\nObrigado.", "Atenção!", MessageBoxButtons.OK);
+                else
+                    MessageBox.Show(txtNomeProd, "Deu ruim, tente de novo a exclusão\nObrigado.", "Atenção!", MessageBoxButtons.OK);
+            }
+        }
     }
 }

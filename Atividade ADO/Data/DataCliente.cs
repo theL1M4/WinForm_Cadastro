@@ -92,5 +92,23 @@ namespace Atividade_ADO.Data
                 throw;
             }
         }
+
+        public bool Excluir(string id)
+        {
+            bool oRetorno;
+            try
+            {
+                ConectaBD oConectaBD = new ConectaBD();
+                var conn = oConectaBD.SqlConn();
+                conn.Open();
+                string strCMD = "DELETE CLIENTES WHERE Id = " + id;
+                oRetorno = conn.Execute(strCMD).ToString() == "1" ? true : false;
+            }
+            catch
+            {
+                oRetorno = false;
+            }
+            return oRetorno;
+        }
     }
 }

@@ -31,7 +31,8 @@
             this.pnlGrid = new System.Windows.Forms.Panel();
             this.dtgProduto = new System.Windows.Forms.DataGridView();
             this.pnlBuscar = new System.Windows.Forms.Panel();
-            this.txtNomeProduto = new System.Windows.Forms.TextBox();
+            this.btnExcluirProd = new System.Windows.Forms.Button();
+            this.txtNomeProd = new System.Windows.Forms.TextBox();
             this.lblNomeProduto = new System.Windows.Forms.Label();
             this.btnBuscarProduto = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -62,7 +63,8 @@
             // 
             // pnlBuscar
             // 
-            this.pnlBuscar.Controls.Add(this.txtNomeProduto);
+            this.pnlBuscar.Controls.Add(this.btnExcluirProd);
+            this.pnlBuscar.Controls.Add(this.txtNomeProd);
             this.pnlBuscar.Controls.Add(this.lblNomeProduto);
             this.pnlBuscar.Controls.Add(this.btnBuscarProduto);
             this.pnlBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -71,12 +73,23 @@
             this.pnlBuscar.Size = new System.Drawing.Size(796, 66);
             this.pnlBuscar.TabIndex = 8;
             // 
-            // txtNomeProduto
+            // btnExcluirProd
             // 
-            this.txtNomeProduto.Location = new System.Drawing.Point(3, 31);
-            this.txtNomeProduto.Name = "txtNomeProduto";
-            this.txtNomeProduto.Size = new System.Drawing.Size(680, 26);
-            this.txtNomeProduto.TabIndex = 4;
+            this.btnExcluirProd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExcluirProd.Location = new System.Drawing.Point(689, 31);
+            this.btnExcluirProd.Name = "btnExcluirProd";
+            this.btnExcluirProd.Size = new System.Drawing.Size(104, 29);
+            this.btnExcluirProd.TabIndex = 7;
+            this.btnExcluirProd.Text = "Excluir";
+            this.btnExcluirProd.UseVisualStyleBackColor = true;
+            this.btnExcluirProd.Click += new System.EventHandler(this.ExcluirProduto);
+            // 
+            // txtNomeProd
+            // 
+            this.txtNomeProd.Location = new System.Drawing.Point(3, 31);
+            this.txtNomeProd.Name = "txtNomeProd";
+            this.txtNomeProd.Size = new System.Drawing.Size(570, 26);
+            this.txtNomeProd.TabIndex = 4;
             // 
             // lblNomeProduto
             // 
@@ -90,7 +103,7 @@
             // btnBuscarProduto
             // 
             this.btnBuscarProduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscarProduto.Location = new System.Drawing.Point(689, 30);
+            this.btnBuscarProduto.Location = new System.Drawing.Point(579, 31);
             this.btnBuscarProduto.Name = "btnBuscarProduto";
             this.btnBuscarProduto.Size = new System.Drawing.Size(104, 29);
             this.btnBuscarProduto.TabIndex = 6;
@@ -141,10 +154,11 @@
         private System.Windows.Forms.Panel pnlGrid;
         private System.Windows.Forms.DataGridView dtgProduto;
         private System.Windows.Forms.Panel pnlBuscar;
-        private System.Windows.Forms.TextBox txtNomeProduto;
+        private System.Windows.Forms.TextBox txtNomeProd;
         private System.Windows.Forms.Label lblNomeProduto;
         private System.Windows.Forms.Button btnBuscarProduto;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblTituloBscClient;
+        private System.Windows.Forms.Button btnExcluirProd;
     }
 }
