@@ -13,7 +13,7 @@ namespace Atividade_ADO
 {
     public partial class frmCadastroCliente : Form
     {
-        Cliente oCliente = new Cliente();
+        public Cliente oCliente = new Cliente();
         public frmCadastroCliente()
         {
             InitializeComponent();
