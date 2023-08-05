@@ -52,10 +52,32 @@ namespace Atividade_ADO.Data
             else if (cliente.Id != 0) //se existir o id ele executa o update
             {
                 //LOGICA PARA ALTERAR CLIENTE NÃO PERMITINDO ALTERAÇÃO DO USUARIO
+                strCMD = "SELECT * FROM CLIENTES WHERE Usuario ='" + cliente.Usuario.ToString() + "'";
                 //LOGICA PARA ALTERAR CLIENTE PERMITINDO ALTERAÇÃO DO USUARIO
-                sqlCMD.ExecuteNonQuery();
-                oRetorno = 2;
+                
+                
                 MessageBox.Show("Usuário atualizado");
+
+                //QUANDO USUARIO EXISTE E É DO MESMO ID PODE ALTERAR...
+                //QUANDO USUARIO EXISTE E ID É DIFERENTE NÃO PODE...
+                //QUANDO USUARIO NÃO EXISTE O MESMO ID NÃO VAI EXISTIR...
+                var podeAlterar = conn.Query<Cliente>(strCMD).ToList().
+                                       Where(x => x.Id == cliente.Id).
+                                       Count() == 1 ? true : false;
+
+                if (podeAlterar)
+                {
+                    //LOGICA PARA ALTERAR CLIENTE PERMITINDO ALTERAÇÃO DO USUARIO
+                    strCMD = "UPDATE CLIENTES SET Nome=@NOME, Usuario=@USUARIO, Telefone=@TELEFONE, Email=@EMAIL WHERE Id = @ID";
+                    sqlCMD.CommandText = strCMD;
+                    sqlCMD.ExecuteNonQuery();
+                    oRetorno = 2;
+                }
+                else
+                {
+                    oRetorno = 1;
+                }
+
             }
             else //se não existir o id ele executa o insert
             {

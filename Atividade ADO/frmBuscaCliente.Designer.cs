@@ -30,13 +30,14 @@
         {
             this.btnBuscar = new System.Windows.Forms.Button();
             this.pnlBuscar = new System.Windows.Forms.Panel();
+            this.btnAlterar = new System.Windows.Forms.Button();
+            this.btnExcluir = new System.Windows.Forms.Button();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.lblNome = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblTituloBscClient = new System.Windows.Forms.Label();
             this.pnlGrid = new System.Windows.Forms.Panel();
             this.dtgClientes = new System.Windows.Forms.DataGridView();
-            this.btnExcluir = new System.Windows.Forms.Button();
             this.pnlBuscar.SuspendLayout();
             this.panel1.SuspendLayout();
             this.pnlGrid.SuspendLayout();
@@ -46,7 +47,7 @@
             // btnBuscar
             // 
             this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.Location = new System.Drawing.Point(582, 30);
+            this.btnBuscar.Location = new System.Drawing.Point(470, 30);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(104, 29);
             this.btnBuscar.TabIndex = 6;
@@ -56,6 +57,7 @@
             // 
             // pnlBuscar
             // 
+            this.pnlBuscar.Controls.Add(this.btnAlterar);
             this.pnlBuscar.Controls.Add(this.btnExcluir);
             this.pnlBuscar.Controls.Add(this.txtNome);
             this.pnlBuscar.Controls.Add(this.lblNome);
@@ -66,11 +68,33 @@
             this.pnlBuscar.Size = new System.Drawing.Size(796, 66);
             this.pnlBuscar.TabIndex = 5;
             // 
+            // btnAlterar
+            // 
+            this.btnAlterar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAlterar.Location = new System.Drawing.Point(580, 30);
+            this.btnAlterar.Name = "btnAlterar";
+            this.btnAlterar.Size = new System.Drawing.Size(104, 29);
+            this.btnAlterar.TabIndex = 8;
+            this.btnAlterar.Text = "Alterar";
+            this.btnAlterar.UseVisualStyleBackColor = true;
+            this.btnAlterar.Click += new System.EventHandler(this.AlterarCliente);
+            // 
+            // btnExcluir
+            // 
+            this.btnExcluir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExcluir.Location = new System.Drawing.Point(689, 31);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(104, 29);
+            this.btnExcluir.TabIndex = 7;
+            this.btnExcluir.Text = "Excluir";
+            this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.ExcluirCliente);
+            // 
             // txtNome
             // 
             this.txtNome.Location = new System.Drawing.Point(3, 31);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(573, 26);
+            this.txtNome.Size = new System.Drawing.Size(461, 26);
             this.txtNome.TabIndex = 4;
             // 
             // lblNome
@@ -111,23 +135,17 @@
             // 
             // dtgClientes
             // 
+            this.dtgClientes.AllowUserToAddRows = false;
+            this.dtgClientes.AllowUserToResizeRows = false;
             this.dtgClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgClientes.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtgClientes.Location = new System.Drawing.Point(0, 0);
+            this.dtgClientes.MultiSelect = false;
             this.dtgClientes.Name = "dtgClientes";
+            this.dtgClientes.ReadOnly = true;
             this.dtgClientes.Size = new System.Drawing.Size(796, 277);
             this.dtgClientes.TabIndex = 0;
-            // 
-            // btnExcluir
-            // 
-            this.btnExcluir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExcluir.Location = new System.Drawing.Point(689, 31);
-            this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(104, 29);
-            this.btnExcluir.TabIndex = 7;
-            this.btnExcluir.Text = "Excluir";
-            this.btnExcluir.UseVisualStyleBackColor = true;
-            this.btnExcluir.Click += new System.EventHandler(this.ExcluirCliente);
+            this.dtgClientes.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.AlterarClienteGrid);
             // 
             // frmBuscaCliente
             // 
@@ -159,5 +177,6 @@
         private System.Windows.Forms.Panel pnlGrid;
         private System.Windows.Forms.DataGridView dtgClientes;
         private System.Windows.Forms.Button btnExcluir;
+        private System.Windows.Forms.Button btnAlterar;
     }
 }

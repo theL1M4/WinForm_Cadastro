@@ -181,6 +181,7 @@
             this.Name = "frmCadastroCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmCadastroCliente";
+            this.Load += new System.EventHandler(this.CarregaForm);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

@@ -47,5 +47,17 @@ namespace Atividade_ADO
         {
             this.Close();
         }
+
+        private void CarregaForm(object sender, EventArgs e)
+        {
+            if (oCliente.Id > 0)
+            {
+                txtNome.Text = oCliente.Nome;
+                txtUsuario.Text = oCliente.Usuario;
+                txtEmail.Text = oCliente.Email;
+                txtTelefone.Text = oCliente.Telefone;
+                btnCadastrar.Text = "Alterar";
+            }
+        }
     }
 }
