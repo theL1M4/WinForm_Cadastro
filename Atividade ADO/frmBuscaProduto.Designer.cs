@@ -37,6 +37,7 @@
             this.btnBuscarProduto = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblTituloBscClient = new System.Windows.Forms.Label();
+            this.btnAlterarProduto = new System.Windows.Forms.Button();
             this.pnlGrid.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgProduto)).BeginInit();
             this.pnlBuscar.SuspendLayout();
@@ -60,9 +61,11 @@
             this.dtgProduto.Name = "dtgProduto";
             this.dtgProduto.Size = new System.Drawing.Size(796, 277);
             this.dtgProduto.TabIndex = 0;
+            this.dtgProduto.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.AlterarProdutoGrid);
             // 
             // pnlBuscar
             // 
+            this.pnlBuscar.Controls.Add(this.btnAlterarProduto);
             this.pnlBuscar.Controls.Add(this.btnExcluirProd);
             this.pnlBuscar.Controls.Add(this.txtNomeProd);
             this.pnlBuscar.Controls.Add(this.lblNomeProduto);
@@ -88,7 +91,7 @@
             // 
             this.txtNomeProd.Location = new System.Drawing.Point(3, 31);
             this.txtNomeProd.Name = "txtNomeProd";
-            this.txtNomeProd.Size = new System.Drawing.Size(570, 26);
+            this.txtNomeProd.Size = new System.Drawing.Size(463, 26);
             this.txtNomeProd.TabIndex = 4;
             // 
             // lblNomeProduto
@@ -103,7 +106,7 @@
             // btnBuscarProduto
             // 
             this.btnBuscarProduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscarProduto.Location = new System.Drawing.Point(579, 31);
+            this.btnBuscarProduto.Location = new System.Drawing.Point(472, 30);
             this.btnBuscarProduto.Name = "btnBuscarProduto";
             this.btnBuscarProduto.Size = new System.Drawing.Size(104, 29);
             this.btnBuscarProduto.TabIndex = 6;
@@ -128,6 +131,17 @@
             this.lblTituloBscClient.Size = new System.Drawing.Size(166, 25);
             this.lblTituloBscClient.TabIndex = 0;
             this.lblTituloBscClient.Text = "Busca Produto";
+            // 
+            // btnAlterarProduto
+            // 
+            this.btnAlterarProduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAlterarProduto.Location = new System.Drawing.Point(579, 31);
+            this.btnAlterarProduto.Name = "btnAlterarProduto";
+            this.btnAlterarProduto.Size = new System.Drawing.Size(104, 29);
+            this.btnAlterarProduto.TabIndex = 8;
+            this.btnAlterarProduto.Text = "Alterar";
+            this.btnAlterarProduto.UseVisualStyleBackColor = true;
+            this.btnAlterarProduto.Click += new System.EventHandler(this.AlterarProduto);
             // 
             // frmBuscaProduto
             // 
@@ -160,5 +174,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblTituloBscClient;
         private System.Windows.Forms.Button btnExcluirProd;
+        private System.Windows.Forms.Button btnAlterarProduto;
     }
 }

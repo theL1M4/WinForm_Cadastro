@@ -37,19 +37,55 @@ namespace Atividade_ADO
 
         private void ExcluirProduto(object sender, EventArgs e)
         {
-            var produto = dtgProduto.CurrentRow.Cells[1].Value.ToString();
-            var idProd = dtgProduto.CurrentRow.Cells[0].Value.ToString();
-            var resp = MessageBox.Show(txtNomeProd, "Deseja mesmo excluir o produto " + produto + "?", "Atenção!", MessageBoxButtons.YesNo);
-
-            if (resp == DialogResult.Yes)
+            try
             {
-                DataProduto oDataProduto = new DataProduto();
+                var produto = dtgProduto.CurrentRow.Cells[1].Value.ToString();
+                var idProd = dtgProduto.CurrentRow.Cells[0].Value.ToString();
+                var resp = MessageBox.Show(txtNomeProd, "Deseja mesmo excluir o produto " + produto + "?", "Atenção!", MessageBoxButtons.YesNo);
 
-                if (oDataProduto.Excluir(idProd))
-                    MessageBox.Show(txtNomeProd, "O produto " + produto + " foi excluido corretamente!\nObrigado.", "Atenção!", MessageBoxButtons.OK);
-                else
-                    MessageBox.Show(txtNomeProd, "Deu ruim, tente de novo a exclusão\nObrigado.", "Atenção!", MessageBoxButtons.OK);
+                if (resp == DialogResult.Yes)
+                {
+                    DataProduto oDataProduto = new DataProduto();
+
+                    if (oDataProduto.Excluir(idProd))
+                        MessageBox.Show(txtNomeProd, "O produto " + produto + " foi excluido corretamente!\nObrigado.", "Atenção!", MessageBoxButtons.OK);
+                    else
+                        MessageBox.Show(txtNomeProd, "Deu ruim, tente de novo a exclusão\nObrigado.", "Atenção!", MessageBoxButtons.OK);
+                }
+
+                BuscaProduto(sender, e);
             }
+            catch
+            {
+                MessageBox.Show("Por favor selecione um produto para excluir.\nObrigado!", "Atenção");
+            }
+        }
+
+        private void AlterarProduto(object sender, EventArgs e)
+        {
+            try
+            {
+                frmCadastroProduto oCadastroProduto = new frmCadastroProduto();
+
+                oCadastroProduto.oProduto.IdProd = (int)dtgProduto.CurrentRow.Cells[0].Value;
+                oCadastroProduto.oProduto.NomeProd = (string)dtgProduto.CurrentRow.Cells[1].Value;
+                oCadastroProduto.oProduto.TipoProd = (string)dtgProduto.CurrentRow.Cells[2].Value;
+                oCadastroProduto.oProduto.UnMedidaProd = (string)dtgProduto.CurrentRow.Cells[3].Value;
+                oCadastroProduto.oProduto.QuantidadeProd = (string)dtgProduto.CurrentRow.Cells[4].Value;
+
+                oCadastroProduto.ShowDialog();
+
+                BuscaProduto(sender, e);
+            }
+            catch
+            {
+                MessageBox.Show("Por favor selecione um produto para alterar.\nObrigado!", "Atenção");
+            }
+        }
+
+        private void AlterarProdutoGrid(object sender, DataGridViewCellEventArgs e)
+        {
+            AlterarProduto(sender, e);
         }
     }
 }

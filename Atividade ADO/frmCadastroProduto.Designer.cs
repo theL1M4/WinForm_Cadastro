@@ -321,6 +321,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "frmCadastroProduto";
             this.Text = "frmCadastroProduto";
+            this.Load += new System.EventHandler(this.CarregaFormProd);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel4.ResumeLayout(false);

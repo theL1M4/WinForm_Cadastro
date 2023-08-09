@@ -13,7 +13,7 @@ namespace Atividade_ADO
 {
     public partial class frmCadastroProduto : Form
     {
-        Produto oProduto = new Produto();
+        public Produto oProduto = new Produto();
         DataProduto oDataProduto = new DataProduto();
         frmCadastroConfirmado varChamaTelaCadConfirm = new frmCadastroConfirmado();
 
@@ -57,6 +57,19 @@ namespace Atividade_ADO
         private void FecharTela(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+   
+        private void CarregaFormProd(object sender, EventArgs e)
+        {
+            if (oProduto.IdProd > 0)
+            {
+                txtNomeProd.Text = oProduto.NomeProd;
+                txtTipoProd.Text = oProduto.TipoProd;
+                txtUnMedProd.Text = oProduto.UnMedidaProd;
+                txtQtdProd.Text = oProduto.QuantidadeProd;
+                btnCadastrarProd.Text = "Alterar";
+            }
         }
     }
 }
