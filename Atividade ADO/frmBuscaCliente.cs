@@ -16,7 +16,7 @@ namespace Atividade_ADO
     {
         public frmBuscaCliente()
         {
-            InitializeComponent();
+            InitializeComponent(); 
         }
 
         private void BuscaCliente(object sender, EventArgs e)
