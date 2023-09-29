@@ -13,6 +13,7 @@ namespace Atividade_ADO
 {
     public partial class frmCadastroCliente : Form
     {
+        public int update;
         public Cliente oCliente = new Cliente();
         public frmCadastroCliente()
         {
@@ -48,7 +49,7 @@ namespace Atividade_ADO
             this.Close();
         }
 
-        private void CarregaForm(object sender, EventArgs e)
+        public void CarregaForm(object sender, EventArgs e)
         {
             if (oCliente.Id > 0)
             {
@@ -57,6 +58,8 @@ namespace Atividade_ADO
                 txtEmail.Text = oCliente.Email;
                 txtTelefone.Text = oCliente.Telefone;
                 btnCadastrar.Text = "Alterar";
+
+                update = 1;
             }
         }
     }

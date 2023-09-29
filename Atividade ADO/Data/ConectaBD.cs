@@ -9,10 +9,7 @@ namespace Atividade_ADO.Data
 {
     internal class ConectaBD
     {
-        string ConnctionString = @"Data Source=JUN0675589W10-1\BDSENAC;" +
-            "Initial Catalog=AtvBD;" +
-            "User ID=senaclivre;" +
-            "Password='senaclivre'";
+        string ConnctionString = @"Server=tcp:prjsenac.database.windows.net,1433;Initial Catalog=AtvBD;Persist Security Info=False;User ID=adm;Password=P@ssw0rd;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
         public SqlConnection SqlConn()
         {
             SqlConnection sqlConn = new SqlConnection(ConnctionString);
